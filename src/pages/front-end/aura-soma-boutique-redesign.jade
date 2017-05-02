@@ -3,12 +3,14 @@ extends ../../layouts/project
 block head
   title #{i18n.name}'s Portfolio | Aura Soma Boutique redesign
   meta(name="description", content="Building on my previous SEO work, my client re-hired me to perform some optimisation work in order to increase their website’s conversion rate.")
+  meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
+  meta(property='og:type', content='portfolio')
   meta(property='og:title', content="#{i18n.name}'s Portfolio - Aura Soma")
   meta(property='og:description', content='Building on my previous SEO work, my client re-hired me to perform some optimisation work in order to increase their website’s conversion rate.')
-  meta(property='og:type', content='portfolio')
-  meta(property='og:image', content='#{i18n.website}/images/aura-soma-boutique-redesign/thumb.png')
   meta(property='og:url', content='#{i18n.website}/aura-soma-boutique-redesign.html')
-  meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
+  meta(property='og:image', content='#{i18n.website}/images/aura-soma-boutique-redesign/thumb.png')
+  meta(property="og:image:width" content="800")
+  meta(property="og:image:height" content="400")
 
 block project
   .main.container

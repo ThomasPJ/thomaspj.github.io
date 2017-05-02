@@ -3,12 +3,14 @@ extends ../../layouts/project
 block head
   title #{i18n.name}'s Portfolio | Petit Bateau Christmas project
   meta(name="description", content="altima° and Petit Bateau have worked together to design and develop a unique landing page for the 2014 festive season.")
+  meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
+  meta(property='og:type', content='portfolio')
   meta(property='og:title', content="#{i18n.name}'s Portfolio - Petit Bateau")
   meta(property='og:description', content='altima° and Petit Bateau have worked together to design and develop a unique landing page for the 2014 festive season.')
-  meta(property='og:type', content='portfolio')
-  meta(property='og:image', content='#{i18n.website}/images/petit-bateau-christmas-project/thumb.png')
   meta(property='og:url', content='#{i18n.website}/petit-bateau-christmas-project.html')
-  meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
+  meta(property='og:image', content='#{i18n.website}/images/petit-bateau-christmas-project/thumb.png')
+  meta(property="og:image:width" content="800")
+  meta(property="og:image:height" content="400")
 
 block project
   .main.container
