@@ -1,0 +1,53 @@
+---
+permalink: /aura-soma-boutique/
+---
+
+extends ../../layouts/project
+
+block head
+  title #{i18n.name}'s Portfolio | Aura Soma Boutique
+  meta(name="description", content="Aura Soma is an e-commerce website that sells essential oils and perfumes. My initial work consisted in re-writing all of the website’s product pages.")
+  meta(property='og:title', content="#{i18n.name}'s Portfolio - Aura Soma")
+  meta(property='og:description', content='Aura Soma is an e-commerce website that sells essential oils and perfumes. My initial work consisted in re-writing all of the website’s product pages.')
+  meta(property='og:type', content='portfolio')
+  meta(property='og:image', content='#{i18n.website}/images/aura-soma-boutique/thumb.png')
+  meta(property='og:url', content='#{i18n.website}/aura-soma-boutique.html')
+  meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
+
+block project
+  .main.container
+    .content-project.sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
+      .nine.columns
+        .breadcrumbs-top
+          ul
+            li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+              a(href='../', title='#{i18n.name}, Portfolio Homepage', itemprop='url')
+                span(itemprop='title') Home
+              span >
+            li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+              p(itemprop='title') Aura Soma Boutique   
+        .media
+          ul.image-list
+            li
+              .divider
+              img(itemprop='image', 
+              src='../images/aura-soma-boutique/aura-soma-old-homepage.png', 
+              alt='Aura Soma Boutique - old homepage', 
+              title='Aura Soma Boutique - old homepage')
+            li
+              .divider
+              img(itemprop='image', 
+              src='../images/aura-soma-boutique/aura-soma-old-product-page.png', 
+              alt='Aura Soma Boutique - old product page', 
+              title='Aura Soma Boutique - old product page')
+      .description.six.columns.animated.fadeIn.absolute
+        .inner-description
+          h1.client(itemprop='name') Aura Soma
+          p.date 2014 to 2015
+          p.tags(itemprop='keywords')
+            i.fa.fa-tags
+            |  SEO, meta tags, SMO, AdWords, Analytics, Disqus, Google Webmaster Tools
+          .brief
+            p Aura Soma is an e-commerce website that sells essential oils and perfumes. My initial work consisted in re-writing all of the website’s product pages. Along with this work, I highlighted several improvements to be made on the website, namely : the installation of a customer feedback system, a better use of social media, and a re-design of the homepage.
+          .conclusion
+            p The customer feedback system has become a popular feature and allows customers to comment on their previous purchases and to recommend their purchased goods to other potential clients. Moreover, this system offers a powerful linking feature that pushes my client’s products on other similar websites. Finally, I have a noticed a significantly reduced bounce rate since the re-design of the homepage.              

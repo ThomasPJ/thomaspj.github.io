@@ -1,0 +1,50 @@
+block exports
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    // Google Tag Manager
+    script.
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PZ4DZT5');
+    // End Google Tag Manager
+    link(rel='dns-prefetch', href='//fonts.googleapis.com')
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    link(rel="stylesheet", href="./styles/index.css")
+    link(rel="stylesheet", href="./styles/fonts.css")
+    link(href='http://fonts.googleapis.com/css?family=Signika:300,400', rel='stylesheet', type='text/css')
+    link(rel='shortcut icon', type='image/x-icon', href='./favicon.ico')
+    block head
+  body(itemscope, itemtype="http://schema.org/WebSite")
+    // Google Tag Manager (noscript)
+    noscript
+      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-PZ4DZT5', height='0', width='0', style='display:none;visibility:hidden')
+    // End Google Tag Manager (noscript)
+  .wrap
+    header.animated.fadeInDown
+      .container
+        .name-hp.index.six.columns.offset-by-one
+          a
+            img(src='images/thomas-petitjean.png', alt='#{i18n.name}, #{i18n.profession}', title='#{i18n.name}, #{i18n.profession}')
+            .profile
+              h1
+                | #{i18n.name}
+                br
+                span Portfolio
+    block all-projects
+    footer.footer-hp
+      .container
+        .sixteen.columns
+          .five.columns.offset-by-one
+            ul.nav
+              li
+                a(href='https://twitter.com/_tpetitjean', target='_blank', title='Twitter') Twitter
+              li
+                a(href='https://www.linkedin.com/in/petitjeanthomas/', target='_blank', title='Linkedin') Linkedin
+              li
+                a(href='https://www.instagram.com/thomas_petitjean/', target='_blank', title='Instagram') Instagram
+          .signature.four.columns
+            p #{i18n.name} - 2017

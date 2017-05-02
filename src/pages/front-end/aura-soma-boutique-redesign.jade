@@ -1,0 +1,59 @@
+---
+permalink: /aura-soma-boutique-redesign/
+---
+
+extends ../../layouts/project
+
+block head
+  title #{i18n.name}'s Portfolio | Aura Soma Boutique redesign
+  meta(name="description", content="Building on my previous SEO work, my client re-hired me to perform some optimisation work in order to increase their website’s conversion rate.")
+  meta(property='og:title', content="#{i18n.name}'s Portfolio - Aura Soma")
+  meta(property='og:description', content='Building on my previous SEO work, my client re-hired me to perform some optimisation work in order to increase their website’s conversion rate.')
+  meta(property='og:type', content='portfolio')
+  meta(property='og:image', content='#{i18n.website}/images/aura-soma-boutique-redesign/thumb.png')
+  meta(property='og:url', content='#{i18n.website}/aura-soma-boutique-redesign.html')
+  meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
+
+block project
+  .main.container
+    .content-project.sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
+      .nine.columns
+        .breadcrumbs-top
+          ul
+            li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+              a(href='../', title='#{i18n.name}, Portfolio Homepage', itemprop='url')
+                span(itemprop='title') Home
+              span >
+            li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+              p(itemprop='title') Aura Soma Boutique Redesign   
+        .media
+          ul.image-list
+            li
+              .divider
+              img(itemprop='image', 
+              src='../images/aura-soma-boutique-redesign/aura-soma-product-page.png', 
+              alt='Aura Soma Boutique - new product page', 
+              title='Aura Soma Boutique - new product page')
+            li
+              .divider
+              img(itemprop='image', 
+              src='../images/aura-soma-boutique-redesign/aura-soma-category-list.png', 
+              alt='Aura Soma Boutique - category list', 
+              title='Aura Soma Boutique - category list')
+            li
+              .divider
+              img(itemprop='image', 
+              src='../images/aura-soma-boutique-redesign/aura-soma-checkout.png', 
+              alt='Aura Soma Boutique - checkout', 
+              title='Aura Soma Boutique - checkout')
+      .description.six.columns.animated.fadeIn
+        .inner-description
+          h1.client(itemprop='name') Aura Soma
+          p.date 2014, Feb–
+          p.tags(itemprop='keywords')
+            i.fa.fa-tags
+            |  Marketing Campaigns, Call-To-Action, Conversion Funnel
+          .brief
+            p Building on my previous SEO work, my client re-hired me to perform some optimisation work in order to increase their website’s conversion rate. I made ​​a number of visual enhancements both on product pages and on the conversion funnel.
+          .conclusion
+            p My client noticed a 30% increase in turnover over the first 3 months, compared with the turnover in year Y-1.
