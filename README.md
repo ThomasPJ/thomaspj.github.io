@@ -12,35 +12,36 @@ This portfolio features a series of projects I have worked on - as a project man
 |-src/
     |- /assets
     |- /i18n
+    |- /images
     |- /layouts
-    |- /pages //child templates (extends of layouts)
+    |- /pages //child templates and other pages
+    |- /seo //sitemap and robots.txt
     |- /styles
-    |- robots.txt
 ```
 
 ### Child template
 
 ```jade
-extends /layouts/main
-
-extends ../layouts/main
+extends ../../layouts/project
 
 block head
-  title #{i18n.title}
-  meta(name="description", content="#{i18n.meta_description}")
+  title
+  meta(name="description", content="")
 
-block main-col
+block project
   // start here
 ```
 
 ## Next steps
-- [ ] Link to resume
+- [ ] About and resume link
+- [ ] CSS animations
+- [ ] Permalinks
+- [ ] Cloudflare setup
 - [ ] Image optimization
-- [ ] Sitemap
+- [x] Sitemap
 - [ ] Update robots.txt
 
 ## Future plans
 - Remove unused CSS rules
-- Cloudflare setup
 - Pass markdown content into jade files on build
 - Automate sitemap update on build
