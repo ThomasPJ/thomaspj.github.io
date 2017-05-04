@@ -26,11 +26,6 @@ gulp.task("images", function(){
     .pipe(gulp.dest("dist/images"))
 })
 
-gulp.task("fonts", function(){
-  return gulp.src("src/styles/fonts.css")
-    .pipe(gulp.dest("dist/styles"))
-})
-
 gulp.task("projects", function(){
   return gulp.src("src/pages/*/**.jade")
     .pipe(jade(markupOptions))
@@ -56,7 +51,7 @@ gulp.task("seo", function(){
     .pipe(gulp.dest("dist"))
 })
 
-gulp.task("default", ["projects", "index", "styles", "fonts", "assets", "images", "seo"])
+gulp.task("default", ["projects", "index", "styles", "assets", "images", "seo"])
 
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
