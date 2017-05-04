@@ -1,0 +1,21 @@
+sudo: false
+
+language: node_js
+node_js:
+  - "iojs"
+  - "7"
+
+before_script:
+  - npm install -g gulp
+script: gulp
+
+env:
+  global:
+    - secure: Y3mExUEfWxEfgXBzoTU7BAp6bG+yUZalOsdcEkFzyO7IuRmtsgHUiDRfZy9rqS9A4RkWoAGdvv62UME+lWUy4FPIZLN735qcqKxfLTaxg02LNlyxMxHf0ZIGd+ZEtwfbOK3oDWhv6ji13mAyrQNt9MsCC0n/dRHFE5pBe6DF+xuMJTmTM39MHcgLWzaJNGDxGvnj2Y4e3qnRdd+zhwpcCKR1wn0JMm9J3KUzMahabDN9U5f0QYCud+rQARbn6DHsQiUEIYVhx+YJXTOq1bDXMGRof96eJQWpqkHZSQ7t+fQobTjHKRjE4dotxtkOJMvUDvyA3fQ6Dljv9lycaDWHml9/FWHr1ISepfUUTXvmRfxWUg0ki3xfk2HKHOhS2mbRwca5vdBJhLqLPIDLBFqWRHESIycCCtpNPfOpM435UzRmoAsArqVRXQEuYWdZSRjq8IKj1a4IBOmizzHTORcAyCe3FENH+kCtIvGLXORDrqaipIe3YpZ3nrt7/UYa/huMBpMlsbhPX7aV/0vY51QdKNCT69mcnwpZByelj9YamkSOYeNvl2aPiSKOIx7E/jdb/1HxCxjG+ngXIb0NWI7KX0F9L2vkIO2H+l9PoWsJFIBa5yb2KP9+jr08DhHIv6o6nuWTJEBofDltMtpQ1oennltpLVhBIvoPqcN4BbiB3W0=
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  on:
+    branch: dev
+  target_branch: master
