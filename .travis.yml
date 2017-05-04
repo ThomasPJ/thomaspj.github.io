@@ -6,6 +6,7 @@ node_js:
   - "7"
 
 before_script:
+  - npm install -g gulp
   - npm install --save-dev
 script: gulp
 
