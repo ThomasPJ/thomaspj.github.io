@@ -1,11 +1,11 @@
-sudo: false
+sudo: true
 
 language: node_js
 node_js:
   - "iojs"
   - "6"
 
-before_script:
+install:
   - npm install -g gulp
   - npm install --save-dev gulp
   - npm install
