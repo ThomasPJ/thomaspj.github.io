@@ -1,0 +1,68 @@
+extends ../../layouts/project
+
+block head
+  title #{i18n.name}'s Portfolio | PCI Developments
+  meta(name="description", content="The PCI industry project allowed me to develop my scrum mastering skills and understand the concepts of MVP, sprints and retros.")
+  meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
+  meta(property='og:type', content='portfolio')
+  meta(property='og:title', content="#{i18n.name}'s Portfolio - PCI Developments")
+  meta(property='og:description', content='The PCI industry project allowed me to develop my scrum mastering skills and understand the concepts of MVP, sprints and retros.')
+  meta(property='og:url', content='#{i18n.website}/project-management/pci-developments.html')
+  meta(property='og:image', content='#{i18n.website}/images/pci-developments/thumb.jpg')
+  meta(property="og:image:width" content="960")
+  meta(property="og:image:height" content="559")
+
+block project
+  .main.container
+    .content-project.sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
+      .nine.columns
+        .breadcrumbs-top
+          ul
+            li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+              a(href='../', title='#{i18n.name}, Portfolio Homepage', itemprop='url')
+                span(itemprop='title') Home
+              span >
+            li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+              p(itemprop='title') PCI Developments 
+        .media
+          ul.image-list
+            li
+              .divider
+              img(itemprop='image', 
+              src='../images/pci-developments/user-interface.png', 
+              alt='PCI Developments / User Interface', 
+              title='PCI Developments / User Interface')
+            li
+              .divider
+              img(itemprop='image', 
+              src='../images/pci-developments/whiteboard.jpg', 
+              alt='PCI Developments / Whiteboard', 
+              title='PCI Developments / Whiteboard')
+            li
+              .divider
+              img(itemprop='image', 
+              src='../images/pci-developments/zenhub.png', 
+              alt='PCI Developments / Zenhub', 
+              title='PCI Developments / Zenhub')
+      .description.six.columns.animated.fadeIn.absolute
+        .inner-description
+          h1.client(itemprop='name') 
+            a(href='https://pci-group.com/' target="_blank") PCI Developments
+          p.date Jan - Apr 2017
+          p.tags(itemprop='keywords')
+            i.fa.fa-tags
+            |  scrum masterting, sprint planning & review, demos, story points
+          .brief
+            p.highlight My objective for this project was to develop my scrum mastering skills and understand the concepts of MVP, sprints and retros.
+            p 
+              | Our mission was to showcase the vibrancy and dynamism of the 
+              a(href="http://www.pci-group.com/PCIprojects/569-great-northern-way/" target="_blank") future Great Northern Way.
+              |  We chose to develop a tablet application to provide the public and potential tenants with an interactive experience to understand GNW’s potential to truly become a vibrant and thriving creative community.
+            p I lead a team of 5 in developing a tablet application for PCI as part of my industry project at the Centre for Digital Media. Our team was composed of 2 developers, a UX designer and a UI designer. 
+            p I lead our sprint planning, review and retro sessions and I was our client's primary point of contact throughout the whole semester. I managed both the art pipeline and the technical pipeline (milestone definition, issue tracking...) and organised our final demo & delivery.
+          .conclusion
+            p Throughout the project we learned how to strip our design down to the essentials, and designate a clear focus for each iteration in order to prove and validate our concept with our client. This helped us prioritize better and design a stronger MVP (Minimum Viable Product) that focused on the core idea. We also managed to provide our client with a roadmap for future developments, to allow them to plan future iterations.
+            p 
+              a(href="http://blogs.thecdm.ca/arch/" target="_blank") Team blog
+              | , 
+              a(href="https://github.com/mdm11/GNW" target="_blank") Github repo
