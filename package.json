@@ -1,6 +1,5 @@
 {
   "name": "thomas-portfolio",
-  "version": "0.1",
   "description": "This repository contains ThomasPJ's personal portfolio.",
   "main": "Gulpfile.js",
   "author": "ThomasPJ",
