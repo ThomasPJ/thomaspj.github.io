@@ -1,19 +1,19 @@
-var gulp = require("gulp")
-  , jade = require("gulp-jade")
-  , stylus = require("gulp-stylus")
-  , concat = require('gulp-concat')
-  , cssmin = require("gulp-cssmin")
-  , ghPages = require('gulp-gh-pages')
-  , autoprefixer = require("gulp-autoprefixer")
-  , imagemin = require('gulp-imagemin')
+var gulp = require("gulp"),
+    jade = require("gulp-jade"),
+    stylus = require("gulp-stylus"),
+    concat = require('gulp-concat'),
+    cssmin = require("gulp-cssmin"),
+    ghPages = require('gulp-gh-pages'),
+    autoprefixer = require("gulp-autoprefixer"),
+    imagemin = require('gulp-imagemin'),
 
-  , i18n = require("./src/i18n")
+    i18n = require("./src/i18n"),
 
-  , markupOptions = {
-      locals : {
-        i18n : i18n
+    markupOptions = {
+        locals : {
+          i18n : i18n
+        }
       }
-    }
 
 gulp.task("assets", function(){
   return gulp.src("src/assets/**")
@@ -22,7 +22,10 @@ gulp.task("assets", function(){
 
 gulp.task("images", function(){
   return gulp.src("src/images/**")
-    // .pipe(imagemin())
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.jpegtran({progressive: true})
+    ]))
     .pipe(gulp.dest("dist/images"))
 })
 
