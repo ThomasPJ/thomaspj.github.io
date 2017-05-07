@@ -13,46 +13,47 @@ block head
   meta(property="og:image:height" content="400")
 
 block project
-  .main.container
-    .content-project.sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
-      .nine.columns
-        .breadcrumbs-top
-          ul
-            li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
-              a(href='../', title='#{i18n.name}, Portfolio Homepage', itemprop='url')
-                span(itemprop='title') Home
-              span >
-            li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
-              p(itemprop='title') Club Med   
-        .media
-          ul.image-list
-            li
-              .divider
-              img(itemprop='image', 
-              src='../images/club-med/club-med-old-destination-page.png', 
-              alt='Club Med destination page', 
-              title='Club Med destination page')
-            li
-              .divider
-              img(itemprop='image', 
-              src='../images/club-med/club-med-calendar.png', 
-              alt='Club Med calendar', 
-              title='Club Med calendar')
-            li
-              .divider
-              img(itemprop='image', 
-              src='../images/club-med/club-med-old-homepage.png', 
-              alt='Club Med old homepage', 
-              title='Club Med old homepage')
-      .description.six.columns.animated.fadeIn
-        .inner-description
-          h1.client(itemprop='name') 
-            a(href='https://www.clubmed.fr/' target="_blank") Club Med
-          p.date 2014, Jul-
-          p.tags(itemprop='keywords')
-            i.fa.fa-tags
-            |  website specifications, market research, UX workshops
-          .brief
-            p In 2011, Club Med initiated a website overhaul. After having successfully redesigned their “Booking Engine” (conversion funnel), altima° was chosen in 2014 to rebuild the rest of Club Med’s website. I assisted a Senior Project Manager throughout my internship at altima°. My work consisted primarily in the following: 1) the writing of website specifications 2) market research and 3) preparation of UX workshops.
-          .conclusion
-            p Working for Club Med gave me the opportunity to understand how web agencies such as altima° work with big companies on daily and long-term bases. I learned that continuous communication and rigorous organization are key when working with multidisciplinary teams.
+  .main
+    .container
+      .content-project.sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
+        .nine.columns
+          .breadcrumbs-top
+            ul
+              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+                a(href='../', title='#{i18n.name}, Portfolio Homepage', itemprop='url')
+                  span(itemprop='title') Home
+                span >
+              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+                p(itemprop='title') Club Med   
+          .media
+            ul.image-list
+              li
+                .divider
+                img(itemprop='image', 
+                src='../images/club-med/club-med-old-destination-page.png', 
+                alt='Club Med destination page', 
+                title='Club Med destination page')
+              li
+                .divider
+                img(itemprop='image', 
+                src='../images/club-med/club-med-calendar.png', 
+                alt='Club Med calendar', 
+                title='Club Med calendar')
+              li
+                .divider
+                img(itemprop='image', 
+                src='../images/club-med/club-med-old-homepage.png', 
+                alt='Club Med old homepage', 
+                title='Club Med old homepage')
+        .description.six.columns.animated.fadeIn
+          .inner-description
+            h1.client(itemprop='name') 
+              a(href='https://www.clubmed.fr/' target="_blank") Club Med
+            p.date 2014, Jul-
+            p.tags(itemprop='keywords')
+              i.fa.fa-tags
+              |  website specifications, market research, UX workshops
+            .brief
+              p In 2011, Club Med initiated a website overhaul. After having successfully redesigned their “Booking Engine” (conversion funnel), altima° was chosen in 2014 to rebuild the rest of Club Med’s website. I assisted a Senior Project Manager throughout my internship at altima°. My work consisted primarily in the following: 1) the writing of website specifications 2) market research and 3) preparation of UX workshops.
+            .conclusion
+              p Working for Club Med gave me the opportunity to understand how web agencies such as altima° work with big companies on daily and long-term bases. I learned that continuous communication and rigorous organization are key when working with multidisciplinary teams.

@@ -13,46 +13,47 @@ block head
   meta(property="og:image:height" content="400")
 
 block project
-  .main.container
-    .content-project.sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
-      .nine.columns
-        .breadcrumbs-top
-          ul
-            li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
-              a(href='../', title='#{i18n.name}, Portfolio Homepage', itemprop='url')
-                span(itemprop='title') Home
-              span >
-            li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
-              p(itemprop='title') Romy and Ray   
-        .media
-          ul.image-list
-            li
-              .divider
-              img(itemprop='image', 
-              src='../images/romy-and-ray/romy-and-ray-homepage.png', 
-              alt='Romy and Ray homepage', 
-              title='Romy and Ray homepage')
-            li
-              .divider
-              img(itemprop='image', 
-              src='../images/romy-and-ray/romy-and-ray-winter-collection.png', 
-              alt='Romy and Ray winter collection', 
-              title='Romy and Ray winter collection')
-            li
-              .divider
-              img(itemprop='image', 
-              src='../images/romy-and-ray/romy-and-ray-contact.png', 
-              alt='Romy and Ray contact', 
-              title='Romy and Ray contact')
-      .description.six.columns.animated.fadeIn
-        .inner-description
-          h1.client(itemprop='name') 
-            a(href='http://www.romy-and-ray.com/home/' target="_blank") Romy and Ray
-          p.date 2013, Jul–
-          p.tags(itemprop='keywords')
-            i.fa.fa-tags
-            |  HTML, CSS, JS
-          .brief
-            p Romy and Ray is a French clothing brand that designs high quality garments. I worked with a graphic designer to develop their website.
-          .conclusion
-            p The Romy and Ray website features many images and assets. This project allowed me to further my skills in image optimisation, CSS and JS, as well as taught me how to improve a website’s performance.
+  .main
+    .container
+      .content-project.sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
+        .nine.columns
+          .breadcrumbs-top
+            ul
+              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+                a(href='../', title='#{i18n.name}, Portfolio Homepage', itemprop='url')
+                  span(itemprop='title') Home
+                span >
+              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+                p(itemprop='title') Romy and Ray   
+          .media
+            ul.image-list
+              li
+                .divider
+                img(itemprop='image', 
+                src='../images/romy-and-ray/romy-and-ray-homepage.png', 
+                alt='Romy and Ray homepage', 
+                title='Romy and Ray homepage')
+              li
+                .divider
+                img(itemprop='image', 
+                src='../images/romy-and-ray/romy-and-ray-winter-collection.png', 
+                alt='Romy and Ray winter collection', 
+                title='Romy and Ray winter collection')
+              li
+                .divider
+                img(itemprop='image', 
+                src='../images/romy-and-ray/romy-and-ray-contact.png', 
+                alt='Romy and Ray contact', 
+                title='Romy and Ray contact')
+        .description.six.columns.animated.fadeIn
+          .inner-description
+            h1.client(itemprop='name') 
+              a(href='http://www.romy-and-ray.com/home/' target="_blank") Romy and Ray
+            p.date 2013, Jul–
+            p.tags(itemprop='keywords')
+              i.fa.fa-tags
+              |  HTML, CSS, JS
+            .brief
+              p Romy and Ray is a French clothing brand that designs high quality garments. I worked with a graphic designer to develop their website.
+            .conclusion
+              p The Romy and Ray website features many images and assets. This project allowed me to further my skills in image optimisation, CSS and JS, as well as taught me how to improve a website’s performance.

@@ -22,7 +22,7 @@ gulp.task("assets", function(){
 
 gulp.task("images", function(){
   return gulp.src("src/images/**")
-    .pipe(imagemin())
+    // .pipe(imagemin())
     .pipe(gulp.dest("dist/images"))
 })
 

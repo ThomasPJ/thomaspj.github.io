@@ -13,46 +13,47 @@ block head
   meta(property="og:image:height" content="400")
 
 block project
-  .main.container
-    .content-project.sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
-      .nine.columns
-        .breadcrumbs-top
-          ul
-            li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
-              a(href='../', title='#{i18n.name}, Portfolio Homepage', itemprop='url')
-                span(itemprop='title') Home
-              span >
-            li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
-              p(itemprop='title') Marketing society   
-        .media
-          ul.image-list
-            li
-              .divider
-              img(itemprop='image', 
-              src='../images/marketing-society/society-top-section.png', 
-              alt='Marketing Society top section', 
-              title='Marketing Society top section')
-            li
-              .divider
-              img(itemprop='image', 
-              src='../images/marketing-society/society-about.png', 
-              alt='Marketing Society about', 
-              title='Marketing Society about')
-            li
-              .divider
-              img(itemprop='image', 
-              src='../images/marketing-society/society-website-contact.png', 
-              alt='Marketing Society website contact', 
-              title='Marketing Society website contact')
-      .description.six.columns.animated.fadeIn
-        .inner-description
-          h1.client(itemprop='name') 
-            a(href='http://nottingham-marketing-society.co.uk/' target="_blank") Marketing Society
-          p.date 2013, Oct–
-          p.tags(itemprop='keywords')
-            i.fa.fa-tags
-            |  HTML, CSS, JS, PHP, jQuery
-          .brief
-            p As CTO of Nottingham University’s Marketing, Advertising and Design Society, I was in charge of designing and developing the society’s website. The website’s main purpose was to facilitate communication between us, committee members, and the members of our society. It also explained the nature of our society and displayed our event dates.
-          .conclusion
-            p The society’s website became our main communication channel along with social media.          
+  .main
+    .container
+      .content-project.sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
+        .nine.columns
+          .breadcrumbs-top
+            ul
+              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+                a(href='../', title='#{i18n.name}, Portfolio Homepage', itemprop='url')
+                  span(itemprop='title') Home
+                span >
+              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+                p(itemprop='title') Marketing society   
+          .media
+            ul.image-list
+              li
+                .divider
+                img(itemprop='image', 
+                src='../images/marketing-society/society-top-section.png', 
+                alt='Marketing Society top section', 
+                title='Marketing Society top section')
+              li
+                .divider
+                img(itemprop='image', 
+                src='../images/marketing-society/society-about.png', 
+                alt='Marketing Society about', 
+                title='Marketing Society about')
+              li
+                .divider
+                img(itemprop='image', 
+                src='../images/marketing-society/society-website-contact.png', 
+                alt='Marketing Society website contact', 
+                title='Marketing Society website contact')
+        .description.six.columns.animated.fadeIn
+          .inner-description
+            h1.client(itemprop='name') 
+              a(href='http://nottingham-marketing-society.co.uk/' target="_blank") Marketing Society
+            p.date 2013, Oct–
+            p.tags(itemprop='keywords')
+              i.fa.fa-tags
+              |  HTML, CSS, JS, PHP, jQuery
+            .brief
+              p As CTO of Nottingham University’s Marketing, Advertising and Design Society, I was in charge of designing and developing the society’s website. The website’s main purpose was to facilitate communication between us, committee members, and the members of our society. It also explained the nature of our society and displayed our event dates.
+            .conclusion
+              p The society’s website became our main communication channel along with social media.          
