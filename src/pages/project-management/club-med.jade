@@ -29,26 +29,32 @@ block project
             ul.image-list
               li
                 .divider
-                img(itemprop='image', 
-                src='../images/club-med/club-med-old-destination-page.png', 
-                alt='Club Med destination page', 
-                title='Club Med destination page')
+                figure
+                  img(itemprop='image', 
+                  src='../images/club-med/club-med-old-homepage.png', 
+                  alt='Club Med old homepage', 
+                  title='Club Med old homepage')
+                  figcaption Fig 1. Above the fold
               li
                 .divider
-                img(itemprop='image', 
-                src='../images/club-med/club-med-calendar.png', 
-                alt='Club Med calendar', 
-                title='Club Med calendar')
+                figure
+                  img(itemprop='image', 
+                  src='../images/club-med/club-med-old-destination-page.png', 
+                  alt='Club Med destination page', 
+                  title='Club Med destination page')
+                  figcaption Fig 2. Destination page
               li
                 .divider
-                img(itemprop='image', 
-                src='../images/club-med/club-med-old-homepage.png', 
-                alt='Club Med old homepage', 
-                title='Club Med old homepage')
+                figure
+                  img(itemprop='image', 
+                  src='../images/club-med/club-med-calendar.png', 
+                  alt='Club Med calendar', 
+                  title='Club Med calendar')
+                  figcaption Fig 3. Calendar
         .description.six.columns.animated.fadeIn
           .inner-description
             h1.client(itemprop='name') 
-              a(href='https://www.clubmed.fr/' target="_blank") Club Med
+              a(href='https://www.clubmed.fr/' target="_blank" title="Club Med France" rel="nofollow noopener") Club Med
             p.date 2014, Jul-
             p.tags(itemprop='keywords')
               i.fa.fa-tags
