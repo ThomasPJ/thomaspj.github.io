@@ -33,6 +33,8 @@ block project
 ```
 
 ## Next steps
+- [ ] Use `<picture>` element
+- [ ] Dynamic resizing of images: [ImageOptim](https://imageoptim.com/api/get?username=)
 - [ ] About and resume link
 - [ ] CSS animations
 - [ ] Permalinks
@@ -40,8 +42,6 @@ block project
 - [ ] Image optimization
 - [x] Sitemap
 - [ ] Update robots.txt
-
-## Future plans
-- Remove unused CSS rules
-- Pass markdown content into jade files on build
-- Automate sitemap update on build
+- [x] Remove unused CSS rules
+- [ ] Pass markdown content into jade files on build
+- [ ] Automate sitemap update on build
