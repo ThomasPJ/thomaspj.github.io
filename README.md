@@ -37,6 +37,7 @@ block project
 - [ ] Dynamic resizing of images: [ImageOptim](https://imageoptim.com/api/get?username=)
 - [ ] About and resume link
 - [ ] CSS animations
+- [ ] Refactor CSS
 - [ ] Permalinks
 - [ ] Cloudflare setup
 - [ ] Image optimization
