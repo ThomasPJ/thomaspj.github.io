@@ -30,9 +30,24 @@ gulp.task("images", function(){
 })
 
 gulp.task("projects", function(){
-  return gulp.src("src/pages/*/**.jade")
+  return gulp.src("src/pages/project/*/**.jade")
     .pipe(jade(markupOptions))
-    .pipe(gulp.dest("dist"))
+    .pipe(gulp.dest("dist/project"))
+})
+gulp.task("posts", function(){
+  return gulp.src("src/pages/post/**.jade")
+    .pipe(jade(markupOptions))
+    .pipe(gulp.dest("dist/post"))
+})
+gulp.task("photo", function(){
+  return gulp.src("src/pages/photography/index.jade")
+    .pipe(jade(markupOptions))
+    .pipe(gulp.dest("dist/photography"))
+})
+gulp.task("categories", function(){
+  return gulp.src("src/pages/category/**.jade")
+    .pipe(jade(markupOptions))
+    .pipe(gulp.dest("dist/category"))
 })
 gulp.task("index", function(){
   return gulp.src("src/pages/*.jade")
@@ -54,7 +69,7 @@ gulp.task("seo", function(){
     .pipe(gulp.dest("dist"))
 })
 
-gulp.task("default", ["projects", "index", "styles", "assets", "images", "seo"])
+gulp.task("default", ["projects", "posts", "photo", "categories", "index", "styles", "assets", "images", "seo"])
 
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')

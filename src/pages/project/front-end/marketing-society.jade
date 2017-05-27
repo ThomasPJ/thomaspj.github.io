@@ -1,4 +1,4 @@
-extends ../../layouts/project
+extends ../../../layouts/project
 
 block head
   title #{i18n.name}'s Portfolio | Nottingham Uni's marketing society
@@ -24,6 +24,12 @@ block project
                   span(itemprop='title') Home
                 span >
               li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+                a(href='#{i18n.website}/category/front-end.html', 
+                title='#{i18n.name}, Front-End projects', 
+                itemprop='url')
+                  span(itemprop='title') Front-End
+                span >
+              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
                 p(itemprop='title') Marketing society
           .media
             ul.image-list
@@ -31,7 +37,7 @@ block project
                 .divider
                 figure
                   img(itemprop='image', 
-                  src='../images/marketing-society/society-top-section.png', 
+                  src='../../images/marketing-society/society-top-section.png', 
                   alt='Marketing Society top section', 
                   title='Marketing Society top section')
                   figcaption Fig 1. Above the fold
@@ -39,7 +45,7 @@ block project
                 .divider
                 figure
                   img(itemprop='image', 
-                  src='../images/marketing-society/society-about.png', 
+                  src='../../images/marketing-society/society-about.png', 
                   alt='Marketing Society about', 
                   title='Marketing Society about')
                   figcaption Fig 2. About us
@@ -47,7 +53,7 @@ block project
                 .divider
                 figure
                   img(itemprop='image', 
-                  src='../images/marketing-society/society-website-contact.png', 
+                  src='../../images/marketing-society/society-website-contact.png', 
                   alt='Marketing Society website contact', 
                   title='Marketing Society website contact')
                   figcaption Fig 3. Contact us

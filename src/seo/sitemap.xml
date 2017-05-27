@@ -13,15 +13,27 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://thomaspj.github.io/front-end/aura-soma-boutique-redesign.html</loc>
+    <loc>https://thomaspj.github.io/category/front-end.html</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://thomaspj.github.io/front-end/marketing-society.html</loc>
+    <loc>https://thomaspj.github.io/category/project-management.html</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://thomaspj.github.io/front-end/romy-and-ray.html</loc>
+    <loc>https://thomaspj.github.io/category/search-engine-marketing.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://thomaspj.github.io/project/front-end/aura-soma-boutique-redesign.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://thomaspj.github.io/project/front-end/marketing-society.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://thomaspj.github.io/project/front-end/romy-and-ray.html</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -29,27 +41,27 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://thomaspj.github.io/project-management/club-med.html</loc>
+    <loc>https://thomaspj.github.io/project/project-management/club-med.html</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://thomaspj.github.io/project-management/pci-developments.html</loc>
+    <loc>https://thomaspj.github.io/project/project-management/pci-developments.html</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://thomaspj.github.io/project-management/petit-bateau-christmas-project.html</loc>
+    <loc>https://thomaspj.github.io/project/project-management/petit-bateau-christmas-project.html</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://thomaspj.github.io/search-engine-marketing/aura-soma-boutique.html</loc>
+    <loc>https://thomaspj.github.io/project/search-engine-marketing/aura-soma-boutique.html</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://thomaspj.github.io/search-engine-marketing/ing-direct.html</loc>
+    <loc>https://thomaspj.github.io/project/search-engine-marketing/ing-direct.html</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://thomaspj.github.io/search-engine-marketing/petit-bateau-second-batch.html</loc>
+    <loc>https://thomaspj.github.io/project/search-engine-marketing/petit-bateau-second-batch.html</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

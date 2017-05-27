@@ -1,4 +1,4 @@
-extends ../../layouts/project
+extends ../../../layouts/project
 
 block head
   title #{i18n.name}'s Portfolio | PCI Developments
@@ -24,6 +24,12 @@ block project
                   span(itemprop='title') Home
                 span >
               li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+                a(href='#{i18n.website}/category/project-management.html', 
+                title='#{i18n.name}, Project Management projects', 
+                itemprop='url')
+                  span(itemprop='title') Project Management
+                span >
+              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
                 p(itemprop='title') PCI Developments
           .media
             ul.image-list
@@ -31,7 +37,7 @@ block project
                 .divider
                 figure
                   img(itemprop='image', 
-                  src='../images/pci-developments/user-interface.png', 
+                  src='../../images/pci-developments/user-interface.png', 
                   alt='PCI Developments / User Interface', 
                   title='PCI Developments / User Interface')
                   figcaption Fig 1. User Interface of the application
@@ -39,7 +45,7 @@ block project
                 .divider
                 figure
                   img(itemprop='image', 
-                  src='../images/pci-developments/whiteboard.jpg', 
+                  src='../../images/pci-developments/whiteboard.jpg', 
                   alt='PCI Developments / Whiteboard', 
                   title='PCI Developments / Whiteboard')
                   figcaption Fig 2. Capture of our project timeline (above) and our backlog (on the left)
@@ -47,7 +53,7 @@ block project
                 .divider
                 figure
                   img(itemprop='image', 
-                  src='../images/pci-developments/zenhub.png', 
+                  src='../../images/pci-developments/zenhub.png', 
                   alt='PCI Developments / Zenhub', 
                   title='PCI Developments / Zenhub')
                   figcaption Fig 3. Capture of our Zenhub board
@@ -64,12 +70,12 @@ block project
               p I lead a team of 5 in developing a tablet application for PCI as part of my industry project at the Centre for Digital Media. Our team was composed of 2 developers, a UX designer and a UI designer. 
               p 
                 | Our mission was to showcase the vibrancy and dynamism of the 
-                a(href="http://www.pci-group.com/PCIprojects/569-great-northern-way/" target="_blank") future Great Northern Way.
+                a(href="http://www.pci-group.com/PCIprojects/569-great-northern-way/" target="_blank" title="PCI Group - Great Northern Way Project Page" rel="nofollow noopener") future Great Northern Way.
                 |  We aimed to provide the public and potential tenants with an interactive experience to help them understand GNW’s potential to truly become a vibrant and thriving creative community.
               p I lead our sprint planning, review and retro sessions and I was our client's primary point of contact throughout the whole semester. I managed both the art pipeline and the technical pipeline (milestone definition, issue tracking...) and organised our final demo & delivery.
             .conclusion
               p Throughout the project we learned how to strip our design down to the essentials, and designate a clear focus for each iteration in order to prove and validate our concept with our client. This helped us prioritize better and design a stronger MVP that focused on the core idea. We also managed to provide our client with a roadmap for future developments, to allow them to plan future iterations right after delivery.
               p 
-                a(href="http://blogs.thecdm.ca/arch/" target="_blank") Team blog
+                a(href="http://blogs.thecdm.ca/arch/" target="_blank" rel="noopener") Team blog
                 | , 
-                a(href="https://github.com/mdm11/GNW" target="_blank") Github repo
+                a(href="https://github.com/mdm11/GNW" target="_blank" rel="noopener") Github repo

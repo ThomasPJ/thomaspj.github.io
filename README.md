@@ -22,7 +22,7 @@ This portfolio features a series of projects I have worked on - as a project man
 ### Child template
 
 ```jade
-extends ../../layouts/project
+extends ../../../layouts/project
 
 block head
   title

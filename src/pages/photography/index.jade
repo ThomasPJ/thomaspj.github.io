@@ -1,4 +1,4 @@
-extends ../../layouts/project
+extends ../../layouts/post
 
 block head
   title #{i18n.name}'s Portfolio | Photos
@@ -62,7 +62,7 @@ block project
         .description.six.columns.animated.fadeIn
           .inner-description
             h1.client(itemprop='name') 
-              a(href='https://www.instagram.com/thomas_petitjean/' target="_blank" title="Thomas Petitjean / Instagram profile") My Instagram profile
+              a(href='https://www.instagram.com/thomas_petitjean/' target="_blank" title="Thomas Petitjean / Instagram profile" rel="noopener") My Instagram profile
             p.date 2015 - Present
             p.tags(itemprop='keywords')
               i.fa.fa-tags

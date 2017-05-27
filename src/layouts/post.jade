@@ -13,9 +13,9 @@ html(lang='en')
     // End Google Tag Manager
     link(rel='dns-prefetch', href='//fonts.googleapis.com')
     meta(name="viewport", content="width=device-width,initial-scale=1,user-scalable=no")
-    link(rel="stylesheet", href="./styles/index.css")
+    link(rel="stylesheet", href="../styles/index.css")
     link(href='https://fonts.googleapis.com/css?family=Signika:300,400', rel='stylesheet')
-    link(rel='shortcut icon', type='image/x-icon', href='./favicon.ico')
+    link(rel='shortcut icon', type='image/x-icon', href='../favicon.ico')
     block head
   body(itemscope, itemtype="http://schema.org/WebSite")
     // Google Tag Manager (noscript)
@@ -25,19 +25,19 @@ html(lang='en')
     .wrap
       header.animated.fadeInDown
         .container
-          .name-hp.index.six.columns.offset-by-one
-            a
-              img(src='./images/thomas-petitjean.png', alt='#{i18n.name}, #{i18n.profession}', title='#{i18n.name}, #{i18n.profession}')
+          .name-project.six.columns
+            a(href='#{i18n.website}', title='#{i18n.name}, Portfolio Homepage')
+              img(src='../images/thomas-petitjean.png', alt='#{i18n.name}, #{i18n.profession}', title='#{i18n.name}, #{i18n.profession}')
               .profile
-                h1
-                  | #{i18n.name} 
+                span
+                  | #{i18n.name}
                   br
-                  span Portfolio
-      block all-projects
-      footer.footer-hp
+                  strong Portfolio
+      block project
+      footer.footer-project
         .container
           .sixteen.columns
-            .five.columns.offset-by-one
+            .five.columns
               ul.nav
                 li
                   a(href='https://twitter.com/_tpetitjean', target='_blank', title='Thomas Petitjean / Twitter') Twitter

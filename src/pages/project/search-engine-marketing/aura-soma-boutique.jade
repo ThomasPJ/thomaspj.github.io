@@ -1,4 +1,4 @@
-extends ../../layouts/project
+extends ../../../layouts/project
 
 block head
   title #{i18n.name}'s Portfolio | Aura Soma Boutique
@@ -24,6 +24,12 @@ block project
                   span(itemprop='title') Home
                 span >
               li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+                a(href='#{i18n.website}/category/project-management.html', 
+                title='#{i18n.name}, Search Engine Marketing projects', 
+                itemprop='url')
+                  span(itemprop='title') Search Engine Marketing
+                span >
+              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
                 p(itemprop='title') Aura Soma Boutique
           .media
             ul.image-list
@@ -31,7 +37,7 @@ block project
                 .divider
                 figure
                   img(itemprop='image', 
-                  src='../images/aura-soma-boutique/aura-soma-old-homepage.png', 
+                  src='../../images/aura-soma-boutique/aura-soma-old-homepage.png', 
                   alt='Aura Soma Boutique - old homepage', 
                   title='Aura Soma Boutique - old homepage')
                   figcaption Fig 1. Homepage
@@ -39,7 +45,7 @@ block project
                 .divider
                 figure
                   img(itemprop='image', 
-                  src='../images/aura-soma-boutique/aura-soma-old-product-page.png', 
+                  src='../../images/aura-soma-boutique/aura-soma-old-product-page.png', 
                   alt='Aura Soma Boutique - old product page', 
                   title='Aura Soma Boutique - old product page')
                   figcaption Fig 2. Product page

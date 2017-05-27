@@ -1,4 +1,4 @@
-extends ../../layouts/project
+extends ../../../layouts/project
 
 block head
   title #{i18n.name}'s Portfolio | Romy and Ray
@@ -24,6 +24,12 @@ block project
                   span(itemprop='title') Home
                 span >
               li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+                a(href='#{i18n.website}/category/front-end.html', 
+                title='#{i18n.name}, Front-End projects', 
+                itemprop='url')
+                  span(itemprop='title') Front-End
+                span >
+              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
                 p(itemprop='title') Romy and Ray
           .media
             ul.image-list
@@ -31,7 +37,7 @@ block project
                 .divider
                 figure
                   img(itemprop='image', 
-                  src='../images/romy-and-ray/romy-and-ray-homepage.png', 
+                  src='../../images/romy-and-ray/romy-and-ray-homepage.png', 
                   alt='Romy and Ray homepage', 
                   title='Romy and Ray homepage')
                   figcaption Fig 1. Above the fold
@@ -39,7 +45,7 @@ block project
                 .divider
                 figure
                   img(itemprop='image', 
-                  src='../images/romy-and-ray/romy-and-ray-winter-collection.png', 
+                  src='../../images/romy-and-ray/romy-and-ray-winter-collection.png', 
                   alt='Romy and Ray winter collection', 
                   title='Romy and Ray winter collection')
                   figcaption Fig 2. Winter collection
@@ -47,7 +53,7 @@ block project
                 .divider
                 figure
                   img(itemprop='image', 
-                  src='../images/romy-and-ray/romy-and-ray-contact.png', 
+                  src='../../images/romy-and-ray/romy-and-ray-contact.png', 
                   alt='Romy and Ray contact', 
                   title='Romy and Ray contact')
                   figcaption Fig 3. Contact us
