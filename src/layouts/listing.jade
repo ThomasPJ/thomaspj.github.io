@@ -25,14 +25,14 @@ html(lang='en')
     .wrap
       header.animated.fadeInDown
         .container
-          .name-hp.index.six.columns.offset-by-one
+          .name-hp.six.columns.offset-by-one
             a(href='#{i18n.website}', title='#{i18n.name}, Portfolio Homepage')
               img(src='../images/thomas-petitjean.png', alt='#{i18n.name}, #{i18n.profession}', title='#{i18n.name}, #{i18n.profession}')
               .profile
-                h1
+                h1.profile-name
                   | #{i18n.name} 
                   br
-                  span Portfolio
+                  span.profile-portfolio Portfolio
       block listing
       footer.footer-hp
         .container
