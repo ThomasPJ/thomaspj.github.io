@@ -2,66 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://thomaspj.github.io/</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/post/understanding-the-problem-space.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/post/sprint-and-reflect.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/category/front-end.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/category/project-management.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/category/search-engine-marketing.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/project/front-end/aura-soma-boutique-redesign.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/project/front-end/marketing-society.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/project/front-end/romy-and-ray.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/photography/index.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/project/project-management/club-med.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/project/project-management/pci-developments.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/project/project-management/petit-bateau-christmas-project.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/project/search-engine-marketing/aura-soma-boutique.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/project/search-engine-marketing/ing-direct.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://thomaspj.github.io/project/search-engine-marketing/petit-bateau-second-batch.html</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
 </urlset>
