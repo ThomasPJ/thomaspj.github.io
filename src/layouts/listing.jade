@@ -30,10 +30,10 @@ html(lang='en')
             a(href='#{i18n.website}', title='#{i18n.name}, Portfolio Homepage')
               img(src='../images/thomas-petitjean.png', alt='#{i18n.name}, #{i18n.profession}', title='#{i18n.name}, #{i18n.profession}')
               .profile
-                h1.profile-name
+                span.profile-name
                   | #{i18n.name} 
                   br
-                  span.profile-portfolio Portfolio
+                  strong.profile-portfolio Portfolio
       block listing
       footer.footer-hp
         .container

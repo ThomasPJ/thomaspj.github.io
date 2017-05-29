@@ -22,10 +22,10 @@ gulp.task("assets", function(){
 
 gulp.task("images", function(){
   return gulp.src("src/images/**")
-    .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 5}),
-      imagemin.jpegtran({progressive: true})
-    ]))
+    // .pipe(imagemin([
+    //   imagemin.optipng({optimizationLevel: 5}),
+    //   imagemin.jpegtran({progressive: true})
+    // ]))
     .pipe(gulp.dest("dist/images"))
 })
 
