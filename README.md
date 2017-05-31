@@ -2,7 +2,7 @@ Thomas Petitjean - personal portfolio
 ========================
 
 ## Introduction
-This portfolio features a series of projects I have worked on - as a project manager, UX researcher and SEO.
+This portfolio features a series of projects I have worked on as a project manager, scrum master, search engine optimizer and front-end developer.
 
 ## Documentation
 
