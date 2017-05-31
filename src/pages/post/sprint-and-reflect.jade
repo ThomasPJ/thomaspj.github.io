@@ -4,15 +4,19 @@ block head
   title #{i18n.name}'s Portfolio | Sprint and reflect
   meta(name="description", content="A short post on my process as a scrum master.")
   meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
-  meta(property='og:type', content='portfolio')
-  meta(property='og:title', content="#{i18n.name}'s Portfolio - Sprint and reflect")
+  meta(property='og:type', content='blog')
+  meta(property='og:title', content="#{i18n.name}'s Portfolio | Sprint and reflect")
   meta(property='og:description', content='A short post on my process as a scrum master.')
   meta(property='og:url', content='#{i18n.website}/post/sprint-and-reflect.html')
-  meta(property='og:image', content='#{i18n.website}/images/sprint-and-reflect/thumb.jpg')
+  meta(property='og:image:url', content='#{i18n.website}/images/sprint-and-reflect/thumb.jpg')
+  meta(property='og:image:alt', content='#{i18n.name}, Sprint and reflect')
   meta(property="og:image:width" content="4032")
   meta(property="og:image:height" content="3024")
+  meta(name="twitter:card" content="summary")
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
+  meta(name="twitter:title" content="#{i18n.name}'s Portfolio | Sprint and reflect")
+  meta(name="twitter:description" content="A short post on my process as a scrum master.")
 
 block project
   .main
