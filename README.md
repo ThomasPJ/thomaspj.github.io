@@ -14,33 +14,38 @@ This portfolio features a series of projects I have worked on as a project manag
     |- /i18n
     |- /images
     |- /layouts
-    |- /pages //child templates and other pages
-    |- /seo //sitemap and robots.txt
+    |- /pages // all website pages + 404 template
+    |- /seo // sitemap and robots.txt
     |- /styles
 ```
 
-### Child template
+### Layouts
 
-```jade
-extends ../../../layouts/project
-
-block head
-  title
-  meta(name="description", content="")
-
-block project
-  // start here
 ```
+|-src/
+    |- /layouts
+      |- homepage.jade
+      |- listing.jade
+      |- post.jade
+      |- project.jade
+```
+
+### Adding a new page
+1. Add `page_title.jade` in `pages/category`, `pages/post` or `pages/project`
+2. Extend corresponding layout
+3. Add folder named `page_title` in `/images`
+4. Add url in sitemap
 
 ## Next steps
 - [ ] Use `<picture>` element
 - [ ] Dynamic resizing of images: [ImageOptim](https://imageoptim.com/api/get?username=)
-- [ ] About and resume link
+- [ ] About link
+- [x] Resume link
 - [ ] CSS animations
 - [ ] Refactor CSS
 - [ ] Permalinks
 - [ ] Cloudflare setup
-- [ ] Image optimization
+- [x] Image size reduction
 - [x] Sitemap
 - [ ] Update robots.txt
 - [x] Remove unused CSS rules

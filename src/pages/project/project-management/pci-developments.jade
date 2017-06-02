@@ -8,7 +8,7 @@ block head
   meta(property='og:title', content="#{i18n.name}'s Portfolio | PCI Developments")
   meta(property='og:description', content='The PCI industry project allowed me to develop my scrum mastering skills and understand the concepts of MVP, sprints and retros.')
   meta(property='og:url', content='#{i18n.website}/project/project-management/pci-developments.html')
-  meta(property='og:image:url', content='#{i18n.website}/images/pci-developments/thumb.jpg')
+  meta(property='og:image', content='#{i18n.website}/images/pci-developments/thumb.jpg')
   meta(property='og:image:alt', content="#{i18n.name}'s Portfolio | PCI Developments")
   meta(property="og:image:width" content="960")
   meta(property="og:image:height" content="559")
@@ -41,6 +41,13 @@ block project
                 p(itemprop='title') PCI Developments
           .media
             ul.image-list
+              li
+                .divider
+                figure
+                  img(itemprop='image', 
+                  src='../../images/pci-developments/thumb.jpg', 
+                  alt='PCI Developments', 
+                  title='PCI Developments')
               li
                 .divider
                 figure

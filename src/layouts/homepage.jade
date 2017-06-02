@@ -16,7 +16,6 @@ html(lang='en')
     link(rel="stylesheet", href="./styles/index.css")
     link(href='https://fonts.googleapis.com/css?family=Signika:300,400', rel='stylesheet')
     link(rel='shortcut icon', type='image/x-icon', href='./favicon.ico')
-    meta(name='robots', content='noodp')
     meta(name="google-site-verification" content="byS_xtakitCOcvSfFY4YYWj4-zxKYJvjwAK9H75wHlY")
     block head
   body(itemscope, itemtype="http://schema.org/WebSite")
@@ -31,6 +30,8 @@ html(lang='en')
             .fourteen.columns.offset-by-one
               .intro-container
                 h1.intro-title Hi, I'm Thomas
+                p.intro-resume
+                  a(href="#{i18n.website}/resume/thomas-petitjean.pdf" title="Thomas Petitjean resume") - My resume
                 p.intro-nutshell I graduated from The University of Nottingham in 2014 with a BSc in Management. I'm now a masters student at the 
                   a(href="https://thecdm.ca/",
                   target="_blank", 
@@ -38,15 +39,12 @@ html(lang='en')
                   |  I'm a 
                   a(href="#{i18n.website}/category/project-management.html", 
                   title="Project Management Category page") project manager
-                  |  & 
-                  a(href="#{i18n.website}/post/sprint-and-reflect.html", 
-                  title="Sprint and reflect post") scrum master
                   |  by day, and I moonlight as a 
-                  a(href="#{i18n.website}/category/search-engine-marketing.html", 
-                  title="Search Engine Marketing Category Page") search engine optimizer
-                  |  & 
                   a(href="#{i18n.website}/category/front-end.html", 
-                  title="Front-End Development Category Page") front-end developer.
+                  title="Front-End Development Category Page") front-end developer
+                  |  & 
+                  a(href="#{i18n.website}/category/search-engine-marketing.html", 
+                  title="Search Engine Marketing Category Page") search engine optimizer.                  
       block all-projects
       footer.footer-hp
         .container
