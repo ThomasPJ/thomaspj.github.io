@@ -30,8 +30,6 @@ html(lang='en')
             .fourteen.columns.offset-by-one
               .intro-container
                 h1.intro-title Hi, I'm Thomas
-                p.intro-resume
-                  a(href="#{i18n.website}/resume/thomas-petitjean.pdf" title="Thomas Petitjean resume") - My resume
                 p.intro-nutshell I graduated from The University of Nottingham in 2014 with a BSc in Management. I'm now a masters student at the 
                   a(href="https://thecdm.ca/",
                   target="_blank", 
@@ -44,7 +42,24 @@ html(lang='en')
                   title="Front-End Development Category Page") front-end developer
                   |  & 
                   a(href="#{i18n.website}/category/search-engine-marketing.html", 
-                  title="Search Engine Marketing Category Page") search engine optimizer.                  
+                  title="Search Engine Marketing Category Page") search engine optimizer.
+                .intro-links
+                  ul
+                    li
+                      a(href='#{i18n.website}/resume/thomas-petitjean.pdf',
+                      title='Thomas Petitjean resume') My resume
+                    li
+                      a(href='https://twitter.com/_tpetitjean', 
+                      target='_blank', 
+                      title='_tpetitjean on Twitter') Twitter
+                    li
+                      a(href='https://www.linkedin.com/in/petitjeanthomas/', 
+                      target='_blank', 
+                      title='Thomas Petitjean on Linkedin') Linkedin
+                    li
+                      a(href='https://www.instagram.com/thomas_petitjean/', 
+                      target='_blank', 
+                      title='thomas_petitjean on Instagram') Instagram
       block all-projects
       footer.footer-hp
         .container
