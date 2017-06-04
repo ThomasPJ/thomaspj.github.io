@@ -3,6 +3,7 @@ extends ../../layouts/post
 block head
   title #{i18n.name}'s Portfolio | Sprint and reflect
   meta(name="description", content="A short post on my process as a scrum master.")
+  link(rel="canonical" href="#{i18n.website}/post/sprint-and-reflect.html")
   meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
   meta(property='og:type', content='blog')
   meta(property='og:title', content="#{i18n.name}'s Portfolio | Sprint and reflect")
@@ -73,12 +74,7 @@ block post
               i.fa.fa-tags
               |  sprint planning, review, demo, retrospective, scrum mastering, facilitation
             .brief
-              p.highlight This is an attempt to describe my process as a scrum master. I try to improve it every week based on the feedback I get from my team and 
-                a(href="http://www.alsinoy.com/", 
-                target="_blank", 
-                title="Al Sinoy personal website", 
-                rel="nofollow noopener") Al Sinoy
-                | , an agile coach working at the Centre for Digital Media.
+              p.highlight I have been focusing on scrum mastering throughout my masters program at the Centre for Digital Media. This post is an attempt to describe my process and my takeaways/learnings.
               p 
                 em 1. Sprint planning:
                 |  the team starts by writing down a list of objectives for the coming sprint. The Product Owner and Scrum Master then 'translate' these objectives into user stories and hand them over to the dev team. The dev team breaks down the user stories into tasks and put them in 'To Do'. Figure 1 shows a series of user stories in the backlog and their respective tasks on post-its.
@@ -100,7 +96,7 @@ block post
                 |  Did the team deliver? What is left in progress? Do the user stories and goals still make sense for next sprint? Those are questions that I usually ask the dev team to close the sprint and prepare for the new one.
               p 
                 em 5. Sprint retrospective:
-                |  After the review, the team reflects on the project by writing a series of "plus" and "deltas" (Fig 3.) during 2 min. Following the project retro, the team reflects on the process and writes a series of "plus" and "deltas" (Fig 4.) during 2 min. The process retro is always very helpful and helps the team identify problems with regards to the working environment: process, team members... The Scrum master then asks the dev team and the PO how the post-its should be regrouped and if any clusters can be made. The team then agrees on the topics that should be addressed in order to improve the process and begin the 
+                |  # Project retro: after the review, the team reflects on the project by writing a series of "plus" and "deltas" regarding the product/project (Fig 3.) during 2 min. # Process retro: following the project retro, the team reflects on the process and writes a series of "plus" and "deltas" (Fig 4.) during 2 min. The process retro is always very helpful and helps the team identify problems regarding the working environment: process, team members... # Actionables: the Scrum master then asks the dev team and the PO how the post-its should be regrouped and if any clusters can be made. The team then agrees on the topics that should be addressed in order to improve the process and begin the 
                 a(href="http://agilecoffee.com/leancoffee/", 
                 target="_blank", 
                 title="Agile Coffee website", 
@@ -112,8 +108,7 @@ block post
                 | 2) sprints should be 
                 em planned and reviewed differently 
                 | in discovery and production, 3) the scrum master doesn't have all the answers, the dev team does.
-              p
-                | Here's another post you might find interesting: 
+              p Here's another post you might find interesting: 
                 a(href="#{i18n.website}/post/understanding-the-problem-space.html", 
                 title="Understanding the problem space") "Understanding the problem space"
-                |  (workshop facilitation)
+                |  (workshop facilitation).
