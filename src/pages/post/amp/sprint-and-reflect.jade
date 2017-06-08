@@ -1,0 +1,104 @@
+extends ../../../layouts/post-amp
+
+block head
+  title #{i18n.name}'s Portfolio | Sprint and reflect
+  meta(name="description", content="A short post on my process as a scrum master.")
+  link(rel="canonical" href="#{i18n.website}/post/sprint-and-reflect.html")
+  meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
+  meta(property='og:type', content='blog')
+  meta(property='og:title', content="#{i18n.name}'s Portfolio | Sprint and reflect")
+  meta(property='og:description', content='A short post on my process as a scrum master.')
+  meta(property='og:url', content='#{i18n.website}/post/sprint-and-reflect.html')
+  meta(property='og:image', content='#{i18n.website}/images/sprint-and-reflect/thumb.jpg')
+  meta(property='og:image:alt', content='#{i18n.name}, Sprint and reflect')
+  meta(property="og:image:width" content="4032")
+  meta(property="og:image:height" content="3024")
+  meta(name="twitter:card" content="summary")
+  meta(name="twitter:site" content="@_tpetitjean")
+  meta(name="twitter:creator" content="@_tpetitjean")
+  meta(name="twitter:title" content="#{i18n.name}'s Portfolio | Sprint and reflect")
+  meta(name="twitter:description" content="A short post on my process as a scrum master.")
+  script(type='application/ld+json').
+    {
+    "@context": "http://schema.org",
+    "@type": "CreativeWork",
+    "headline": "Sprint and reflect",
+    "description": "A short post on my process as a scrum master.",
+    "keywords": "sprint planning, review, demo, retrospective, scrum mastering, facilitation"
+    }
+  
+block amppost
+  .post-amp
+    .container-amp
+      h1.title-amp Sprint and reflect
+      p.date-amp May 2017
+      p.tags-amp # sprint planning, review, demo, retrospective, scrum mastering, facilitation
+      .content-amp
+        p.highlight I have been focusing on scrum mastering throughout my masters program at the Centre for Digital Media. This post is an attempt to describe my process and my takeaways/learnings.
+        p 
+          em 1. Sprint planning:
+          |  the team starts by writing down a list of objectives for the coming sprint. The Product Owner and Scrum Master then 'translate' these objectives into user stories and hand them over to the dev team. The dev team breaks down the user stories into tasks and put them in 'To Do'. Figure 1 shows a series of user stories in the backlog and their respective tasks on post-its.
+        .img
+          amp-img(alt='Sprint board', 
+          src='../../images/sprint-and-reflect/sprint-board-mid.jpg',
+          width='900', 
+          height='675', 
+          layout='responsive')
+          span Sprint board
+        p Takeaways: 1) the whole team feels ownership over the product as everyone helps defining the sprint objectives, 2) everyone thinks about the sprint goals first, 3) the dev team has total control over production. 
+        p 
+          em 2. Daily stand-up / Scrum:
+          |  the team meets every day at the same time and each team member answers the following questions: 1) What did I do yesterday? 2) What am I doing today? 3) What do I need help with?
+        p Takeaways: the whole team gains clarity on dependencies and priorities. The managers have more visibility on "To do" and "In progress" items.
+        p 
+          em 3. Demos
+        p 
+          span.content-underline Daily:
+          |  the purpose of daily demos is to inform the team of outstanding dependencies and increase everyone's sense of ownership over the product.
+        p 
+          span.content-underline Weekly:
+          |  once a week the team shows the latest prototype(s) to the project stakeholders (Fig 2.) and shares insights of the week's user tests. Client feedback is gathered and organised and provides the team with ideas on how to improve and what to prioritize for the next sprint.
+        .img
+          amp-img(alt='Weekly demo', 
+          src='../../images/sprint-and-reflect/weekly-demo.jpg',
+          width='900', 
+          height='506', 
+          layout='responsive')
+          span Weekly demo
+        p 
+          em 4. Sprint review:
+          |  Did the team deliver? What is left in progress? Do the user stories and goals still make sense for next sprint? Those are questions that I usually ask the dev team to close the sprint and prepare for the new one.
+        p 
+          em 5. Sprint retrospective:
+          |  # Project retro: after the review, the team reflects on the project by writing a series of "plus" and "deltas" regarding the product/project (Fig 3.) during 2 min. 
+        .img
+          amp-img(alt='Project retrospective: plus and deltas', 
+          src='../../images/sprint-and-reflect/project-retro.jpg',
+          width='900', 
+          height='1200', 
+          layout='responsive')
+          span Project retrospective
+        p # Process retro: following the project retro, the team reflects on the process and writes a series of "plus" and "deltas" (Fig 4.) during 2 min. The process retro is always very helpful and helps the team identify problems regarding the working environment: process, team members...
+        .img
+          amp-img(alt='Process retrospective: plus and deltas', 
+          src='../../images/sprint-and-reflect/process-retro.jpg',
+          width='900', 
+          height='675', 
+          layout='responsive')
+          span Process retrospective
+        p # Actionables: the Scrum master then asks the dev team and the PO how the post-its should be regrouped and if any clusters can be made. The team then agrees on the topics that should be addressed in order to improve the process and begin the 
+          a(href="http://agilecoffee.com/leancoffee/", 
+          target="_blank", 
+          title="Agile Coffee website", 
+          rel="nofollow noopener") lean Coffee.
+          |  The objectives should be Specific, Measurable, Attainable, Relevant and Time-specific (SMART).
+        p My takeaways: 1) a process should be 
+          em adjusted and refined every week, 
+          | 2) sprints should be 
+          em planned and reviewed differently 
+          | in discovery and production, 3) the scrum master doesn't have all the answers, the dev team does.
+        p Here's another post you might find interesting: 
+          a(href="#{i18n.website}/post/understanding-the-problem-space.html", 
+          title="Understanding the problem space") "Understanding the problem space"
+          |  (workshop facilitation).
+    

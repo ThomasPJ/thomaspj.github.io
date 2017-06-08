@@ -1,3 +1,4 @@
 User-agent: *
 
 Sitemap: https://thomaspj.github.io/sitemap.xml
+Sitemap: https://thomaspj.github.io/sitemap-amp.xml

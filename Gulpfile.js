@@ -39,6 +39,11 @@ gulp.task("posts", function(){
     .pipe(jade(markupOptions))
     .pipe(gulp.dest("dist/post"))
 })
+gulp.task("ampposts", function(){
+  return gulp.src("src/pages/post/amp/**.jade")
+    .pipe(jade(markupOptions))
+    .pipe(gulp.dest("dist/amp/post"))
+})
 gulp.task("photo", function(){
   return gulp.src("src/pages/photography/index.jade")
     .pipe(jade(markupOptions))
@@ -69,7 +74,7 @@ gulp.task("seo", function(){
     .pipe(gulp.dest("dist"))
 })
 
-gulp.task("default", ["projects", "posts", "photo", "categories", "index", "styles", "assets", "images", "seo"])
+gulp.task("default", ["projects", "posts", "ampposts", "photo", "categories", "index", "styles", "assets", "images", "seo"])
 
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')

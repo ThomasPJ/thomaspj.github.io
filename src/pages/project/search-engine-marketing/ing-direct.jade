@@ -24,21 +24,24 @@ block project
       .content-project.sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
         .nine.columns
           .breadcrumbs-top
-            ul
-              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+            ul(itemscope itemtype="http://schema.org/BreadcrumbList")
+              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+                meta(itemprop="position" content="1")
                 a(href='#{i18n.website}', 
                 title='#{i18n.name}, Portfolio Homepage', 
-                itemprop='url')
-                  span(itemprop='title') Home
+                itemprop='item')
+                  span(itemprop='name') Home
                 span >
-              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
+              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+                meta(itemprop="position" content="2")
                 a(href='#{i18n.website}/category/search-engine-marketing.html', 
                 title='#{i18n.name}, Search Engine Marketing projects', 
-                itemprop='url')
-                  span(itemprop='title') Search Engine Marketing
+                itemprop='item')
+                  span(itemprop='name') Search Engine Marketing
                 span >
-              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
-                p(itemprop='title') ING Direct
+              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+                meta(itemprop="position" content="3")
+                p(itemprop='name') ING Direct
           .media
             ul.image-list
               li

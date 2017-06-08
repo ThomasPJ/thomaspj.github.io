@@ -25,13 +25,17 @@ block post
       .content-project.sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
         .nine.columns
           .breadcrumbs-top
-            ul
-              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
-                a(href='#{i18n.website}', title='#{i18n.name}, Portfolio Homepage', itemprop='url')
-                  span(itemprop='title') Home
+            ul(itemscope itemtype="http://schema.org/BreadcrumbList")
+              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+                meta(itemprop="position" content="1")
+                a(href='#{i18n.website}', 
+                title='#{i18n.name}, Portfolio Homepage', 
+                itemprop='item')
+                  span(itemprop='name') Home
                 span >
-              li(itemscope, itemtype='http://data-vocabulary.org/Breadcrumb')
-                p(itemprop='title') Understanding the problem space
+              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+                meta(itemprop="position" content="2")
+                p(itemprop='name') Understanding the problem space
           .media
             ul.image-list
               li
@@ -76,7 +80,7 @@ block post
                   figcaption Fig 5. Crazy 8s
         .description.six.columns.animated.fadeIn.absolute
           .inner-description
-            h1.client(itemprop='name') Understanding the problem space
+            h1.client(itemprop='headline') Understanding the problem space
             p.date May 2017
             p.tags(itemprop='keywords')
               i.fa.fa-tags
