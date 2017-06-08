@@ -20,11 +20,22 @@ block head
   meta(name="twitter:description" content="A short post on my process as a scrum master.")
   script(type='application/ld+json').
     {
-    "@context": "http://schema.org",
-    "@type": "CreativeWork",
-    "headline": "Sprint and reflect",
-    "description": "A short post on my process as a scrum master.",
-    "keywords": "sprint planning, review, demo, retrospective, scrum mastering, facilitation"
+      "@context": "http://schema.org",
+      "@type": "CreativeWork",
+      "mainEntityOfPage": "#{i18n.website}/post/sprint-and-reflect.html",
+      "headline": "Sprint and reflect",
+      "description": "A short post on my process as a scrum master.",
+      "keywords": "sprint planning, review, demo, retrospective, scrum mastering, facilitation",
+      "author": {
+        "@type": "Person",
+        "name": "Thomas Petitjean"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "#{i18n.website}/images/sprint-and-reflect/sprint-board-mid.jpg",
+        "height": 900,
+        "width": 675
+      }
     }
   
 block amppost
