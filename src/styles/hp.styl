@@ -87,48 +87,49 @@
 .highlight-entry:hover
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.075)
 .categories
-  li
-    margin: 30px 0 0 0
-    .cat-title
-      text-transform: uppercase
-      padding-left: 10px
-      font-size: 14px
-      strong
-        letter-spacing: -0.5px
-        font-weight: normal
-        word-spacing: 1px
+  margin: 30px 0 0 0
+  .cat-title
+    text-transform: uppercase
+    padding-left: 10px
+    font-size: 14px
+    strong
+      letter-spacing: -0.5px
+      font-weight: normal
+      word-spacing: 1px
   li.category-page
     margin: 0
 .category
   overflow: hidden
-  li
-    margin: 0 0 20px
-    background: #FFFEFC
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05)
-    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05)
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05)
-    -webkit-transition: 0.1s ease-in-out
-    -moz-transition: 0.1s ease-in-out
-    -o-transition: 0.1s ease-in-out
-    transition: 0.1s ease-in-out
-    a
-      overflow: hidden
-      display: block
-    a:hover .text h3
-      color: #333
-      text-decoration: none
-    .thumbnail
-      margin: 0
-      img
-        width: 100%
-    .text
-      padding: 10px 7px 5px
-      h3
-        margin: 0 0 5px 0
-        font-size: 14px
-      .project-date em
-        color: #C0C0C0
-        font-weight: lighter
-        font-style: italic
-  li:hover
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.075)
+.category-item
+  background: #fff
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075)
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075)
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075)
+  margin: 0 0 30px 0
+  box-sizing: border-box
+.category-item:hover
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.075)
+  -moz-box-shadow: 0 2px 3px rgba(0,0,0,.075)
+  box-shadow: 0 2px 3px rgba(0,0,0,.075)
+.category-item-content
+  padding: 15px 13px 7px 13px
+.category-item-anchor:hover
+  .homepage-project-title
+    text-decoration: underline
+  .homepage-project-description
+    color: #222
+.homepage-project-title
+  color: #222
+  font-weight: lighter
+  font-size: 20px
+  margin: 0
+.homepage-project-description
+  color: #868080
+  font-size: 15px
+  font-weight: lighter
+  margin: 5px 0
+  line-height: 22px
+.thumbnail
+  margin: 0 0 -5px 0
+  img
+    width: 100%
