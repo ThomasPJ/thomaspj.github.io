@@ -1,0 +1,125 @@
+extends ../../../layouts/post-amp
+
+block head
+  title #{i18n.name}'s Portfolio | Understanding the problem space
+  meta(name="description", content="I co-facilitated a brainstorming workshop with my agile coach as part of my industry project at the Centre for Digital Media.")
+  link(rel="canonical" href="#{i18n.website}/post/understanding-the-problem-space.html")
+  meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
+  meta(property='og:type', content='blog')
+  meta(property='og:title', content="#{i18n.name}'s Portfolio | Understanding the problem space")
+  meta(property='og:description', content='I co-facilitated a brainstorming workshop with my agile coach as part of my industry project at the Centre for Digital Media.')
+  meta(property='og:url', content='#{i18n.website}/post/understanding-the-problem-space.html')
+  meta(property='og:image', content='#{i18n.website}/images/problem-space/thumb.jpg')
+  meta(property='og:image:alt', content='#{i18n.name}, Understanding the problem space')
+  meta(property="og:image:width" content="4032")
+  meta(property="og:image:height" content="3024")
+  meta(name="twitter:card" content="summary")
+  meta(name="twitter:site" content="@_tpetitjean")
+  meta(name="twitter:creator" content="@_tpetitjean")
+  meta(name="twitter:title" content="#{i18n.name}'s Portfolio | Understanding the problem space")
+  meta(name="twitter:description" content="I co-facilitated a brainstorming workshop with my agile coach as part of my industry project at the Centre for Digital Media.")
+  script(type='application/ld+json').
+    {
+      "@context": "http://schema.org",
+      "@type": "CreativeWork",
+      "mainEntityOfPage": "#{i18n.website}/post/understanding-the-problem-space.html",
+      "headline": "Understanding the problem space",
+      "description": "I co-facilitated a brainstorming workshop with my agile coach as part of my industry project at the Centre for Digital Media.",
+      "keywords": "facilitation, agile workshop, project goals, user profiles, user journeys",
+      "author": {
+        "@type": "Person",
+        "name": "Thomas Petitjean"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "#{i18n.website}/images/problem-space/user-journey-mid.jpg",
+        "height": 900,
+        "width": 675
+      }
+    }
+  
+block amppost
+  .post-amp
+    .container-amp
+      h1.title-amp Understanding the problem space
+      p.date-amp May 2017
+      p.tags-amp # facilitation, agile workshop, project goals, user profiles, user journeys
+      .content-amp
+        p.highlight I co-facilitated a workshop with 
+          a(href="http://www.alsinoy.com/",
+          target="_blank", 
+          title="Al Sinoy personal website", 
+          rel="nofollow noopener") Al Sinoy
+          |  for 
+          a(href="http://www.twistperformance.com/",
+          target="_blank", 
+          title="Twist Performance", 
+          rel="nofollow noopener") Twist
+          |  as part of my industry project at the 
+          a(href="https://thecdm.ca/", 
+          target="_blank", 
+          title="The Centre for Digital Media", 
+          rel="nofollow noopener") Centre for Digital Media
+          | . Participants: 1 product owner, 1 scrum master (me), the dev team, the client and Al Sinoy (agile coach). The aim of this post is to present an overview of our workshop along with the key learnings I got from it.
+        h2.brief-nutshell Context
+        p Twist is a fitness company that focuses on 
+          em “forward-thinking nutrition and medicine” and fitness. 
+          | Twist approached the CDM to develop a digital solution around the themes of wellness and health. We organised a brainstorming workshop in week 2 of the project to gain clarity on the project goals and further define the target audience. 
+        h2.brief-nutshell Introduction
+        p We started by defining the OARRS of the meeting: Objective, Agenda, Roles (Fig 1.), and rules (Fig 2.). We then defined our vision of success for the project. These first exercises allowed us to 1) get to know everyone better, 2) clarify the goals of the meeting and 3) reach alignment regarding the project.
+        .img
+          amp-img(alt='Objective, Agenda, Rules & Roles (OARRS)', 
+          src='../../images/problem-space/oarrs-mid.jpg',
+          width='900', 
+          height='1200', 
+          layout='responsive')
+          span Fig 1. Objective, Agenda, Rules & Roles (OARRS)
+        .img
+          amp-img(alt='Workshop agreements', 
+          src='../../images/problem-space/workshop-agreements-mid.jpg',
+          width='900', 
+          height='1200', 
+          layout='responsive')
+          span Fig 2. Workshop agreements
+        h2.brief-nutshell Personas
+        p We then attempted to define the target audience through user profiles (Fig 3.) and user journeys (Fig 4.). Twist did not have a specific demographic in mind, this is why we decided to choose 2 profiles (Jane and Thomas), with opposite needs, motivations, desires and expectations regarding health and fitness. Even though those profiles might not represent the target audience that Twist will eventually aim for, they allowed us to start ideating.
+        .img
+          amp-img(alt='User profile', 
+          src='../../images/problem-space/user-profile-mid.jpg',
+          width='900', 
+          height='675', 
+          layout='responsive')
+          span Fig 3. User profile
+        .img
+          amp-img(alt='User journey', 
+          src='../../images/problem-space/user-journey-mid.jpg',
+          width='900', 
+          height='675', 
+          layout='responsive')
+          span Fig 4. User journey
+        h2.brief-nutshell How might we...
+        p This leads me to our next step: the "How Might We" exercise. With our personas in mind, we individually came up with questions that framed the pain points that were identified in the previous exercise. Here's an example: "How might we help Jane reach her daily goals?". Once all the questions were shared; we grouped them and formed categories silently. The purpose of the silent sorting was to avoid unnecessary, lengthy and biased discussions. We aimed to push the participants to read other people's ideas and concerns.
+        h2.brief-nutshell Ideation
+        .img
+          amp-img(alt='Crazy 8s', 
+          src='../../images/problem-space/crazy-eight-mid.jpg',
+          width='900', 
+          height='1200', 
+          layout='responsive')
+          span Fig 5. Crazy 8s
+        p We finished the workshop with an exercise named "Crazy 8" which consists of sketching/drawing/writing 8 ideas (Fig 5.) in 3 minutes. The ideas should address the questions written in the "How Might We" exercise.
+        h2.brief-nutshell Outcomes
+        p The stakeholders agreed on a first draft for the user profiles, their pain points, and solutions that could potentially address them. The next step for the team was to take those ideas and pain points back to the project room, continue ideating and start producing the first prototypes.
+        h2.brief-nutshell Takeaways
+        p 1) 
+          em breaking into smaller groups 
+          | helps increase ownership (over process and product) and fosters participation, 2) 
+          em the user/target should always be the focus
+          | , 3) 
+          em timeboxing each activity 
+          | is key, it helps the participants focus on what matters, 4) having 
+          em a variety of activities fosters creativity and collaboration.
+        p Read about my process: 
+          a(href="#{i18n.website}/amp/post/sprint-and-reflect.html", 
+          title="Understanding the problem space") here.
+    
