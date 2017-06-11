@@ -1,4 +1,4 @@
-extends ../../layouts/listing
+extends ../../layouts/category
 
 block head
   title #{i18n.name}'s Portfolio | Project Management projects
@@ -17,8 +17,11 @@ block head
   meta(name="twitter:creator" content="@_tpetitjean")
   meta(name="twitter:title" content="#{i18n.name}'s Portfolio | Project Management projects")
   meta(name="twitter:description" content="I have been working as a project manager and scrum master for the past 3 years. I work with multidisciplinary teams that include: CRO consultants, UX consultants, designers, developers...")
+  
+block page-profession
+  h2.header-heading #{i18n.name}, Project Manager
 
-block listing
+block category
   .main
     .container
       .sixteen.columns
@@ -47,7 +50,7 @@ block listing
                       alt='PCI Developments', 
                       title='PCI Developments')
                     .category-item-content
-                      h3.category-item-title PCI Developments
+                      h2.category-item-title PCI Developments
                       p.category-item-description I lead a team of 5 in developing a tablet application for PCI as part of my industry project at the Centre for Digital Media. 
                 li.fourteen.columns.category-item
                   a.category-item-anchor(href='#{i18n.website}/project/project-management/petit-bateau-christmas-project.html', title='Petit Bateau - Christmas 2014 Project Page')
@@ -56,7 +59,7 @@ block listing
                       alt='Petit Bateau - Christmas 2014', 
                       title='Petit Bateau - Christmas 2014')
                     .category-item-content
-                      h3.category-item-title Petit Bateau
+                      h2.category-item-title Petit Bateau
                       p.category-item-description I worked alongside a team of 3 front-end developers to identify and fix bugs on a product landing page.
                 li.fourteen.columns.category-item
                   a.category-item-anchor(href='#{i18n.website}/project/project-management/club-med.html', title='Club Med Project Page')
@@ -65,5 +68,5 @@ block listing
                       alt='Club Med', 
                       title='Club Med')
                     .category-item-content
-                      h3.category-item-title Club Med
+                      h2.category-item-title Club Med
                       p.category-item-description I assisted a Senior Project Manager throughout Club Med's website redesign project.

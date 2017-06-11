@@ -23,7 +23,7 @@ html(lang='en')
       iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-PZ4DZT5', height='0', width='0', style='display:none;visibility:hidden')
     // End Google Tag Manager (noscript)
     .wrap
-      header
+      .header
         .container
           .name-project.six.columns
             a(href='#{i18n.website}', 
@@ -31,11 +31,7 @@ html(lang='en')
               img(src='../../images/thomas-petitjean.png', 
               alt='#{i18n.name}, #{i18n.profession}', 
               title='#{i18n.name}, #{i18n.profession}')
-              .profile
-                span.profile-name
-                  | #{i18n.name}
-                  br
-                  strong.profile-portfolio Portfolio
+              block page-profession
       block project
       .footer
         .container

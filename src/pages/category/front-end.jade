@@ -1,4 +1,4 @@
-extends ../../layouts/listing
+extends ../../layouts/category
 
 block head
   title #{i18n.name}'s Portfolio | Front-End projects
@@ -18,7 +18,10 @@ block head
   meta(name="twitter:title" content="#{i18n.name}'s Portfolio | Front-End projects")
   meta(name="twitter:description" content="I have about 4 years of experience as a part-time front-end developer. Proficiency: HTML, CSS, JS, continuous integration...")
 
-block listing
+block page-profession
+  h2.header-heading #{i18n.name}, Front-End Developer
+
+block category
   .main
     .container
       .sixteen.columns
@@ -42,7 +45,7 @@ block listing
                       alt='Aura Soma Boutique Redesign', 
                       title='Aura Soma Boutique Redesign')
                     .category-item-content
-                      h3.category-item-title Aura Soma Boutique Redesign
+                      h2.category-item-title Aura Soma Boutique Redesign
                       p.category-item-description I worked on Aura Soma's SEO and performed various optimisations on the website's conversion funnel.
                 li.fourteen.columns.category-item
                   a.category-item-anchor(href='#{i18n.website}/project/front-end/marketing-society.html', title='Marketing, Advertising and Design Society Project Page')
@@ -51,7 +54,7 @@ block listing
                       alt='Marketing, Advertising and Design Society', 
                       title='Marketing, Advertising and Design Society')
                     .category-item-content
-                      h3.category-item-title Marketing Society
+                      h2.category-item-title Marketing Society
                       p.category-item-description I designed and developed the society’s website.
                 li.fourteen.columns.category-item
                   a.category-item-anchor(href='#{i18n.website}/project/front-end/romy-and-ray.html', title='Romy and Ray Project Page')
@@ -60,5 +63,5 @@ block listing
                       alt='Romy and Ray', 
                       title='Romy and Ray')
                     .category-item-content
-                      h3.category-item-title Romy and Ray
+                      h2.category-item-title Romy and Ray
                       p.category-item-description I was the main developer for this project.

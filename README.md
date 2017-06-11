@@ -24,8 +24,9 @@ This portfolio features a series of projects I have worked on as a project manag
 ```
 |-src/
     |- /layouts
+      |- category.jade
       |- homepage.jade
-      |- listing.jade
+      |- post-amp.jade
       |- post.jade
       |- project.jade
 ```
