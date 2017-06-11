@@ -20,52 +20,45 @@ block head
 
 block listing
   .main
-    .category-intro
-      .container
-        .sixteen.columns
-          .fourteen.columns.offset-by-one
-            .intro-container
-              h1.intro-title Front-End Development
-              p.intro-nutshell I have four years of experience in front-end development. I'm particularly interested in the concepts of Continuous Integration and Continuous Delivery. Have a look at 
-                a(href="https://github.com/ThomasPJ/thomaspj.github.io/", 
-                target="_blank", 
-                title="#{i18n.name}'s portfolio on Github") my website's respository.
+    .container
+      .sixteen.columns
+        .fourteen.columns.offset-by-one
+          .category-intro-container
+            h1.intro-title Front-End Development
+            p.intro-nutshell I have four years of experience in front-end development. I'm particularly interested in the concepts of Continuous Integration and Continuous Delivery. Have a look at 
+              a(href="https://github.com/ThomasPJ/thomaspj.github.io/", 
+              target="_blank", 
+              title="#{i18n.name}'s portfolio on Github") my website's respository.
     .container
       .content-hp
         .fifteen.columns.offset-by-one
           ul.categories
             li.frontend-category.category-page
               ul.category
-                li.fourteen.columns
-                  a(href='#{i18n.website}/project/front-end/aura-soma-boutique-redesign.html', 
-                    title='Aura Soma Boutique Redesign Project Page')
+                li.fourteen.columns.category-item
+                  a.category-item-anchor(href='#{i18n.website}/project/front-end/aura-soma-boutique-redesign.html', title='Aura Soma Boutique Redesign Project Page')
                     figure.thumbnail
                       img(src='../images/aura-soma-boutique-redesign/thumb.png', 
                       alt='Aura Soma Boutique Redesign', 
                       title='Aura Soma Boutique Redesign')
-                      figcaption.text
-                        h3 Aura Soma Boutique Redesign
-                        p.project-date
-                          em 2014, Feb
-                li.fourteen.columns
-                  a(href='#{i18n.website}/project/front-end/marketing-society.html', 
-                    title='Marketing, Advertising and Design Society Project Page')
+                    .category-item-content
+                      h3.category-item-title Aura Soma Boutique Redesign
+                      p.category-item-description I worked on Aura Soma's SEO and performed various optimisations on the website's conversion funnel.
+                li.fourteen.columns.category-item
+                  a.category-item-anchor(href='#{i18n.website}/project/front-end/marketing-society.html', title='Marketing, Advertising and Design Society Project Page')
                     figure.thumbnail
                       img(src='../images/marketing-society/thumb.png', 
                       alt='Marketing, Advertising and Design Society', 
                       title='Marketing, Advertising and Design Society')
-                      figcaption.text
-                        h3 Marketing, Advertising and Design Society
-                        p.project-date
-                          em 2013, Oct
-                li.fourteen.columns
-                  a(href='#{i18n.website}/project/front-end/romy-and-ray.html', 
-                    title='Romy and Ray Project Page')
+                    .category-item-content
+                      h3.category-item-title Marketing Society
+                      p.category-item-description I designed and developed the society’s website.
+                li.fourteen.columns.category-item
+                  a.category-item-anchor(href='#{i18n.website}/project/front-end/romy-and-ray.html', title='Romy and Ray Project Page')
                     figure.thumbnail
                       img(src='../images/romy-and-ray/thumb.png', 
                       alt='Romy and Ray', 
                       title='Romy and Ray')
-                      figcaption.text
-                        h3 Romy and Ray
-                        p.project-date
-                          em 2013, Jul
+                    .category-item-content
+                      h3.category-item-title Romy and Ray
+                      p.category-item-description I was the main developer for this project.
