@@ -37,11 +37,11 @@ html(lang='en')
                   br
                   strong.profile-portfolio Portfolio
       block listing
-      footer.footer-hp
+      .footer
         .container
           .sixteen.columns
-            .five.columns.offset-by-one
-              ul.nav
+            .footer-container
+              ul.footer-links
                 li
                   a(href='https://twitter.com/_tpetitjean', 
                   target='_blank', 
@@ -54,5 +54,5 @@ html(lang='en')
                   a(href='https://www.instagram.com/thomas_petitjean/', 
                   target='_blank', 
                   title='thomas_petitjean on Instagram') Instagram
-            .signature.four.columns
-              p #{i18n.name} - 2017
+              .footer-signature
+                p #{i18n.name} - 2017
