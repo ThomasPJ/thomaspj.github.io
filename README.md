@@ -42,7 +42,7 @@ This portfolio features a series of projects I have worked on as a project manag
 - [ ] Dynamic resizing of images: [ImageOptim](https://imageoptim.com/api/get?username=)
 - [ ] About link
 - [x] Resume link
-- [ ] CSS animations
+- [x] ~~CSS animations~~
 - [ ] Refactor CSS
 - [ ] Permalinks
 - [ ] Cloudflare setup
