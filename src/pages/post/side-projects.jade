@@ -17,43 +17,39 @@ block head
 block post
   .main
     .container
-      .sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
-        .nine.columns
-          .breadcrumbs-top
-            ul(itemscope itemtype="http://schema.org/BreadcrumbList")
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="1")
-                a(href='#{i18n.website}', 
-                title='#{i18n.name}, Portfolio Homepage', 
-                itemprop='item')
-                  span(itemprop='name') Home
-                span >
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="2")
-                p(itemprop='name') Side projects
-        .fourteen.columns
-          .side-project-list
-            ul
-              li.side-project-item
-                a.side-project-anchor(href="https://github.com/ThomasPJ/thomaspj.github.io/commit/4a78a7a8edb8640520a52f58dcc2598e8b99d613",
-                target="_blank",
-                title="ThomasPJ / AMP Github commit page")
-                  h2.side-project-title Accelerated Mobile Pages
-                  p.side-project-content I've finally made some time to look into Google's AMP Project. Aside from the technical implementation itself, I'm interested to see how Google will process my new AMP blog posts. Does it index those pages faster than regular pages? Will the rest of my website benefit from it?
-                  p.side-project-content Wait and see.
-                  figure.side-project-figure
-                    img(itemprop='image', 
-                    src='../images/side-projects/amp-validation.jpg', 
-                    alt='AMP Validation', 
-                    title='AMP Validation')
-              li.side-project-item
-                a.side-project-anchor(href="https://github.com/ThomasPJ/thomaspj.github.io/commit/44a7db25357519bf85a63b191619eec3bf4cedda",
-                target="_blank",
-                title="ThomasPJ / Travis Github commit page")
-                  h2.side-project-title Deploying through Travis CI
-                  p.side-project-content I've recently tried to link my repo's dev branch to Travis CI. My goal is to have Travis handle the "gulp" and "gulp deploy" tasks right after my commits (kind of like Jekyll). This would save me a lot of time and make my workflow much smoother. Unfortunately my first attempts have failed and I cannot seem to find a logical explanation for it.
-                  figure.side-project-figure
-                    img(itemprop='image', 
-                    src='../images/side-projects/travis-fail.png', 
-                    alt='Travis fail', 
-                    title='Travis fail')  
+      .twelve.columns.offset-by-two
+        .post-intro-container
+          h1.intro-title Side projects
+          p.intro-nutshell In my free time I like to stay up-to-date with the latest Search Engine Optimization trends and I enjoy trying out new front-end techniques on 
+            a(href="https://github.com/ThomasPJ/thomaspj.github.io/commits/dev", 
+            target="_blank", 
+            title="#{i18n.name}'s portfolio on Github") my website
+            | . I'm particularly interested in front-end performance and technical SEO (both client-side and server-side optimisations).
+          .post-intro-divider
+    .container
+      .sixteen.columns
+        .side-project-list
+          ul
+            li.side-project-item
+              a.side-project-anchor(href="https://github.com/ThomasPJ/thomaspj.github.io/commit/4a78a7a8edb8640520a52f58dcc2598e8b99d613",
+              target="_blank",
+              title="ThomasPJ / AMP Github commit page")
+                h2.side-project-title Accelerated Mobile Pages
+                p.side-project-content I've finally made some time to look into Google's AMP Project. Aside from the technical implementation itself, I'm interested to see how Google will process my new AMP blog posts. Does it index those pages faster than regular pages? Will the rest of my website benefit from it?
+                p.side-project-content Wait and see.
+                figure.side-project-figure
+                  img(itemprop='image', 
+                  src='../images/side-projects/amp-validation.jpg', 
+                  alt='AMP Validation', 
+                  title='AMP Validation')
+            li.side-project-item
+              a.side-project-anchor(href="https://github.com/ThomasPJ/thomaspj.github.io/commit/44a7db25357519bf85a63b191619eec3bf4cedda",
+              target="_blank",
+              title="ThomasPJ / Travis Github commit page")
+                h2.side-project-title Deploying through Travis CI
+                p.side-project-content I've recently tried to link my repo's dev branch to Travis CI. My goal is to have Travis handle the "gulp" and "gulp deploy" tasks right after my commits (kind of like Jekyll). This would save me a lot of time and make my workflow much smoother. Unfortunately my first attempts have failed and I cannot seem to find a logical explanation for it.
+                figure.side-project-figure
+                  img(itemprop='image', 
+                  src='../images/side-projects/travis-fail.png', 
+                  alt='Travis fail', 
+                  title='Travis fail')  

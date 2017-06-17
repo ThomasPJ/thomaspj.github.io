@@ -40,7 +40,7 @@ This portfolio features a series of projects I have worked on as a project manag
 ## Next steps
 - [ ] Use `<picture>` element
 - [ ] Dynamic resizing of images: [ImageOptim](https://imageoptim.com/api/get?username=)
-- [ ] About link
+- [ ] About page
 - [x] Resume link
 - [x] ~~CSS animations~~
 - [ ] Refactor CSS
