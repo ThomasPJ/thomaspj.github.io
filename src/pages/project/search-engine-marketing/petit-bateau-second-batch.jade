@@ -22,68 +22,66 @@ block page-profession
   h2.header-heading #{i18n.name}, SEO
 
 block project
-  .main
+  .main(itemscope, itemtype='http://schema.org/CreativeWork')
     .container
-      .sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
-        .nine.columns
-          .breadcrumbs-top
-            ul(itemscope itemtype="http://schema.org/BreadcrumbList")
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="1")
-                a(href='#{i18n.website}', 
-                title='#{i18n.name}, Portfolio Homepage', 
-                itemprop='item')
-                  span(itemprop='name') Home
-                span >
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="2")
-                a(href='#{i18n.website}/category/search-engine-marketing.html', 
-                title='#{i18n.name}, Search Engine Marketing projects', 
-                itemprop='item')
-                  span(itemprop='name') Search Engine Marketing
-                span >
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="3")
-                p(itemprop='name') Petit Bateau (2nd batch)
-          .media
-            ul.image-list
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/petit-bateau-second-batch/thumb.png', 
-                  alt='Petit Bateau', 
-                  title='Petit Bateau')
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/petit-bateau-second-batch/petit-bateau-category-page.png', 
-                  alt='Petit Bateau category page', 
-                  title='Petit Bateau category page')
-                  figcaption Fig 1. Category page
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/petit-bateau-second-batch/petit-bateau-product-listing.png', 
-                  alt='Petit Bateau product listing', 
-                  title='Petit Bateau product listing')
-                  figcaption Fig 2. Product listing
-        .description.six.columns.absolute
-          .inner-description
-            h1.client(itemprop='name') 
-              a(href='https://www.petit-bateau.fr/' target="_blank" title="Petit Bateau France" rel="nofollow noopener") Petit Bateau
-            p.date 2014, Oct-
-            p.tags(itemprop='keywords')
-              i.fa.fa-tags
-              |  project management, BugHerd, Redmine, SEO
-            .brief
-              h3.brief-nutshell Context
-              p Since the release of Petit Bateau’s responsive website in May 2014, Petit Bateau and altima° have carried out a number of iterations based on customer data and my team’s recommendations. The purpose of this 2nd Batch was to correct a number of bugs and tweak some elements of the header and footer, to facilitate navigation and improve user experience. 
-              h3.brief-nutshell My role
-              p Throughout this project, my role was to 1) understand and find solutions to technical difficulties encountered by the technical team, 2) add tickets to the project backlog and prioritize them, 3) formulate SEO recommendations, and 4) review the entirety of the 2nd batch. The entire team used BugHerd and Redmine to facilitate collaboration. These tools allowed us to assign every ticket to a specific person, with a degree of importance. It considerably sped up the process and allowed us to stay organized and progress as a team.
-              p As head of the SEO team for this project, I made sure that a number of SEO optimisations (mostly on-page optimisations) was carried out so that our client’s website met Google’s requirements. I outlined a series of optimisations regarding: structured data, pagination, open graph markup and sitemaps. 
-            .conclusion
-              h3.brief-nutshell Takeaways
-              p Inventory management was a major topic in this project. Petit Bateau unveils a new collection every six months, and therefore has a very high product turnover. Keeping track of product unavailability was crucial in order to maintain the number of 404 errors at a minimum and to ensure the very best customer experience. We recommended Petit Bateau to configure 301 redirects from deleted product pages to their respective category.            
+      .nine.columns
+        .breadcrumbs-top
+          ul(itemscope itemtype="http://schema.org/BreadcrumbList")
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="1")
+              a(href='#{i18n.website}', 
+              title='#{i18n.name}, Portfolio Homepage', 
+              itemprop='item')
+                span(itemprop='name') Home
+              span >
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="2")
+              a(href='#{i18n.website}/category/search-engine-marketing.html', 
+              title='#{i18n.name}, Search Engine Marketing projects', 
+              itemprop='item')
+                span(itemprop='name') Search Engine Marketing
+              span >
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="3")
+              p(itemprop='name') Petit Bateau (2nd batch)
+        .media
+          ul.image-list
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/petit-bateau-second-batch/thumb.png', 
+                alt='Petit Bateau', 
+                title='Petit Bateau')
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/petit-bateau-second-batch/petit-bateau-category-page.png', 
+                alt='Petit Bateau category page', 
+                title='Petit Bateau category page')
+                figcaption Fig 1. Category page
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/petit-bateau-second-batch/petit-bateau-product-listing.png', 
+                alt='Petit Bateau product listing', 
+                title='Petit Bateau product listing')
+                figcaption Fig 2. Product listing
+      .description.seven.columns.absolute
+        h1.client(itemprop='name') 
+          a(href='https://www.petit-bateau.fr/' target="_blank" title="Petit Bateau France" rel="nofollow noopener") Petit Bateau
+        p.date 2014, Oct-
+        p.tags(itemprop='keywords')
+          i.fa.fa-tags
+          |  project management, BugHerd, Redmine, SEO
+        .brief
+          h3.brief-nutshell Context
+          p Since the release of Petit Bateau’s responsive website in May 2014, Petit Bateau and altima° have carried out a number of iterations based on customer data and my team’s recommendations. The purpose of this 2nd Batch was to correct a number of bugs and tweak some elements of the header and footer, to facilitate navigation and improve user experience. 
+          h3.brief-nutshell My role
+          p Throughout this project, my role was to 1) understand and find solutions to technical difficulties encountered by the technical team, 2) add tickets to the project backlog and prioritize them, 3) formulate SEO recommendations, and 4) review the entirety of the 2nd batch. The entire team used BugHerd and Redmine to facilitate collaboration. These tools allowed us to assign every ticket to a specific person, with a degree of importance. It considerably sped up the process and allowed us to stay organized and progress as a team.
+          p As head of the SEO team for this project, I made sure that a number of SEO optimisations (mostly on-page optimisations) was carried out so that our client’s website met Google’s requirements. I outlined a series of optimisations regarding: structured data, pagination, open graph markup and sitemaps. 
+        .conclusion
+          h3.brief-nutshell Takeaways
+          p Inventory management was a major topic in this project. Petit Bateau unveils a new collection every six months, and therefore has a very high product turnover. Keeping track of product unavailability was crucial in order to maintain the number of 404 errors at a minimum and to ensure the very best customer experience. We recommended Petit Bateau to configure 301 redirects from deleted product pages to their respective category.            

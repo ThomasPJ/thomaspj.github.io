@@ -22,75 +22,73 @@ block page-profession
   h2.header-heading #{i18n.name}, Project Manager
 
 block project
-  .main
+  .main(itemscope, itemtype='http://schema.org/CreativeWork')
     .container
-      .sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
-        .nine.columns
-          .breadcrumbs-top
-            ul(itemscope itemtype="http://schema.org/BreadcrumbList")
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="1")
-                a(href='#{i18n.website}', 
-                title='#{i18n.name}, Portfolio Homepage', 
-                itemprop='item')
-                  span(itemprop='name') Home
-                span >
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="2")
-                a(href='#{i18n.website}/category/project-management.html', 
-                title='#{i18n.name}, Project Management projects', 
-                itemprop='item')
-                  span(itemprop='name') Project Management
-                span >
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="3")
-                p(itemprop='name') Club Med
-          .media
-            ul.image-list
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/club-med/thumb.png', 
-                  alt='Club Med', 
-                  title='Club Med')
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/club-med/club-med-old-homepage.png', 
-                  alt='Club Med old homepage', 
-                  title='Club Med old homepage')
-                  figcaption Fig 1. Above the fold
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/club-med/club-med-old-destination-page.png', 
-                  alt='Club Med destination page', 
-                  title='Club Med destination page')
-                  figcaption Fig 2. Destination page
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/club-med/club-med-calendar.png', 
-                  alt='Club Med calendar', 
-                  title='Club Med calendar')
-                  figcaption Fig 3. Calendar
-        .description.six.columns.absolute
-          .inner-description
-            h1.client(itemprop='name') 
-              a(href='https://www.clubmed.fr/' target="_blank" title="Club Med France" rel="nofollow noopener") Club Med
-            p.date 2014, Jul-
-            p.tags(itemprop='keywords')
-              i.fa.fa-tags
-              |  website specifications, market research, UX workshops
-            .brief
-              h3.brief-nutshell Context
-              p In 2011, Club Med initiated a website overhaul. After having successfully redesigned their “Booking Engine” (conversion funnel), altima° was chosen in 2014 to rebuild the rest of Club Med’s website. 
-              h3.brief-nutshell My role
-              p I assisted a Senior Project Manager throughout my internship at altima°. My work consisted primarily in the following: 1) the writing of website specifications 2) market research and 3) preparation of UX workshops.
-            .conclusion
-              h3.brief-nutshell Takeaways
-              p Working for Club Med gave me the opportunity to understand how web agencies such as altima° work with big companies on daily and long-term bases. I learned that continuous communication and rigorous organization are key when working with multidisciplinary teams.
+      .nine.columns
+        .breadcrumbs-top
+          ul(itemscope itemtype="http://schema.org/BreadcrumbList")
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="1")
+              a(href='#{i18n.website}', 
+              title='#{i18n.name}, Portfolio Homepage', 
+              itemprop='item')
+                span(itemprop='name') Home
+              span >
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="2")
+              a(href='#{i18n.website}/category/project-management.html', 
+              title='#{i18n.name}, Project Management projects', 
+              itemprop='item')
+                span(itemprop='name') Project Management
+              span >
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="3")
+              p(itemprop='name') Club Med
+        .media
+          ul.image-list
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/club-med/thumb.png', 
+                alt='Club Med', 
+                title='Club Med')
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/club-med/club-med-old-homepage.png', 
+                alt='Club Med old homepage', 
+                title='Club Med old homepage')
+                figcaption Fig 1. Above the fold
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/club-med/club-med-old-destination-page.png', 
+                alt='Club Med destination page', 
+                title='Club Med destination page')
+                figcaption Fig 2. Destination page
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/club-med/club-med-calendar.png', 
+                alt='Club Med calendar', 
+                title='Club Med calendar')
+                figcaption Fig 3. Calendar
+      .description.seven.columns.absolute
+        h1.client(itemprop='name') 
+          a(href='https://www.clubmed.fr/' target="_blank" title="Club Med France" rel="nofollow noopener") Club Med
+        p.date 2014, Jul-
+        p.tags(itemprop='keywords')
+          i.fa.fa-tags
+          |  website specifications, market research, UX workshops
+        .brief
+          h3.brief-nutshell Context
+          p In 2011, Club Med initiated a website overhaul. After having successfully redesigned their “Booking Engine” (conversion funnel), altima° was chosen in 2014 to rebuild the rest of Club Med’s website. 
+          h3.brief-nutshell My role
+          p I assisted a Senior Project Manager throughout my internship at altima°. My work consisted primarily in the following: 1) the writing of website specifications 2) market research and 3) preparation of UX workshops.
+        .conclusion
+          h3.brief-nutshell Takeaways
+          p Working for Club Med gave me the opportunity to understand how web agencies such as altima° work with big companies on daily and long-term bases. I learned that continuous communication and rigorous organization are key when working with multidisciplinary teams.

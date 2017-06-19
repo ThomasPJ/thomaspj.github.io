@@ -22,66 +22,64 @@ block page-profession
   h2.header-heading #{i18n.name}, SEO
 
 block project
-  .main
+  .main(itemscope, itemtype='http://schema.org/CreativeWork')
     .container
-      .sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
-        .nine.columns
-          .breadcrumbs-top
-            ul(itemscope itemtype="http://schema.org/BreadcrumbList")
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="1")
-                a(href='#{i18n.website}', 
-                title='#{i18n.name}, Portfolio Homepage', 
-                itemprop='item')
-                  span(itemprop='name') Home
-                span >
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="2")
-                a(href='#{i18n.website}/category/search-engine-marketing.html', 
-                title='#{i18n.name}, Search Engine Marketing projects', 
-                itemprop='item')
-                  span(itemprop='name') Search Engine Marketing
-                span >
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="3")
-                p(itemprop='name') ING Direct
-          .media
-            ul.image-list
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/ing-direct/thumb.png', 
-                  alt='ING Direct', 
-                  title='ING Direct')
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/ing-direct/ing-homepage.png', 
-                  alt='ING Direct homepage', 
-                  title='ING Direct homepage')
-                  figcaption Fig 1. Homepage
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/ing-direct/ing-product-page.png', 
-                  alt='ING Direct product page', 
-                  title='ING Direct product page')
-                  figcaption Fig 2. Product page
-        .description.six.columns.absolute
-          .inner-description
-            h1.client(itemprop='name') 
-              a(href='https://www.ingdirect.fr/' target="_blank" title="ING Direct France" rel="nofollow noopener") ING Direct
-            p.date 2014, July-
-            p.tags(itemprop='keywords')
-              i.fa.fa-tags
-              |  meta tags, front-end optimisation, keyword analysis, content optimisation, news sitemap
-            .brief
-              h3.brief-nutshell Context
-              p ING Direct is the No.1 online bank in France. The ING website comprises 1) a series of product pages outlining a range of banking products, 2) landing pages specifically designed for SEO, 3) an FAQ section and 4) a blog. The French online banking sector is highly competitive and remaining amongst the Top 5 in Google’s ranking is very challenging. 
-              h3.brief-nutshell Strategy
-              p Our strategy consisted in making the content as qualitative and as up to date as possible. We achieved this by carrying out recurrent content updates, both on meta tags and visible content and by keeping an up-to-date site tree. In addition to making the content as qualitative as possible, we recommended our client to put in place a “news sitemap” to facilitate the crawler’s crawling process and ultimately to speed up indexation.
-              h3.brief-nutshell My role
-              p I conducted a thorough analysis of various technical issues, both on the blog and ING’s main website, and I submitted a series of recommendations based on the conclusions that I made. I identified many crawl errors and I provided the client a series of steps in order to resolve those errors. This has led to a better site indexing and overall better performance.            
+      .nine.columns
+        .breadcrumbs-top
+          ul(itemscope itemtype="http://schema.org/BreadcrumbList")
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="1")
+              a(href='#{i18n.website}', 
+              title='#{i18n.name}, Portfolio Homepage', 
+              itemprop='item')
+                span(itemprop='name') Home
+              span >
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="2")
+              a(href='#{i18n.website}/category/search-engine-marketing.html', 
+              title='#{i18n.name}, Search Engine Marketing projects', 
+              itemprop='item')
+                span(itemprop='name') Search Engine Marketing
+              span >
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="3")
+              p(itemprop='name') ING Direct
+        .media
+          ul.image-list
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/ing-direct/thumb.png', 
+                alt='ING Direct', 
+                title='ING Direct')
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/ing-direct/ing-homepage.png', 
+                alt='ING Direct homepage', 
+                title='ING Direct homepage')
+                figcaption Fig 1. Homepage
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/ing-direct/ing-product-page.png', 
+                alt='ING Direct product page', 
+                title='ING Direct product page')
+                figcaption Fig 2. Product page
+      .description.seven.columns.absolute
+        h1.client(itemprop='name') 
+          a(href='https://www.ingdirect.fr/' target="_blank" title="ING Direct France" rel="nofollow noopener") ING Direct
+        p.date 2014, July-
+        p.tags(itemprop='keywords')
+          i.fa.fa-tags
+          |  meta tags, front-end optimisation, keyword analysis, content optimisation, news sitemap
+        .brief
+          h3.brief-nutshell Context
+          p ING Direct is the No.1 online bank in France. The ING website comprises 1) a series of product pages outlining a range of banking products, 2) landing pages specifically designed for SEO, 3) an FAQ section and 4) a blog. The French online banking sector is highly competitive and remaining amongst the Top 5 in Google’s ranking is very challenging. 
+          h3.brief-nutshell Strategy
+          p Our strategy consisted in making the content as qualitative and as up to date as possible. We achieved this by carrying out recurrent content updates, both on meta tags and visible content and by keeping an up-to-date site tree. In addition to making the content as qualitative as possible, we recommended our client to put in place a “news sitemap” to facilitate the crawler’s crawling process and ultimately to speed up indexation.
+          h3.brief-nutshell My role
+          p I conducted a thorough analysis of various technical issues, both on the blog and ING’s main website, and I submitted a series of recommendations based on the conclusions that I made. I identified many crawl errors and I provided the client a series of steps in order to resolve those errors. This has led to a better site indexing and overall better performance.            

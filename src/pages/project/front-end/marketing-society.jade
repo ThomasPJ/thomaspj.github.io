@@ -22,64 +22,62 @@ block page-profession
   h2.header-heading #{i18n.name}, Front-End Developer
 
 block project
-  .main
+  .main(itemscope, itemtype='http://schema.org/CreativeWork')
     .container
-      .sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
-        .nine.columns
-          .breadcrumbs-top
-            ul(itemscope itemtype="http://schema.org/BreadcrumbList")
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="1")
-                a(href='#{i18n.website}', 
-                title='#{i18n.name}, Portfolio Homepage', 
-                itemprop='item')
-                  span(itemprop='name') Home
-                span >
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="2")
-                a(href='#{i18n.website}/category/front-end.html', 
-                title='#{i18n.name}, Front-End projects', 
-                itemprop='item')
-                  span(itemprop='name') Front-End
-                span >
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="3")
-                p(itemprop='name') Marketing society
-          .media
-            ul.image-list
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/marketing-society/society-top-section.png', 
-                  alt='Marketing Society top section', 
-                  title='Marketing Society top section')
-                  figcaption Fig 1. Above the fold
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/marketing-society/society-about.png', 
-                  alt='Marketing Society about', 
-                  title='Marketing Society about')
-                  figcaption Fig 2. About us
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/marketing-society/society-website-contact.png', 
-                  alt='Marketing Society website contact', 
-                  title='Marketing Society website contact')
-                  figcaption Fig 3. Contact us
-        .description.six.columns
-          .inner-description
-            h1.client(itemprop='name') 
-              a(href='http://nottingham-marketing-society.co.uk/' target="_blank" title="Nottingham University Marketing Advertising and Design Society" rel="nofollow noopener") Marketing Society
-            p.date 2013, Oct–
-            p.tags(itemprop='keywords')
-              i.fa.fa-tags
-              |  HTML, CSS, JS, PHP, jQuery
-            .brief
-              p As CTO of Nottingham University’s Marketing, Advertising and Design Society, I was in charge of designing and developing the society’s website. The website’s main purpose was to facilitate communication between us, committee members, and the members of our society. It also explained the nature of our society and displayed our event dates.
-            .conclusion
-              p The society’s website became our main communication channel along with social media.          
+      .nine.columns
+        .breadcrumbs-top
+          ul(itemscope itemtype="http://schema.org/BreadcrumbList")
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="1")
+              a(href='#{i18n.website}', 
+              title='#{i18n.name}, Portfolio Homepage', 
+              itemprop='item')
+                span(itemprop='name') Home
+              span >
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="2")
+              a(href='#{i18n.website}/category/front-end.html', 
+              title='#{i18n.name}, Front-End projects', 
+              itemprop='item')
+                span(itemprop='name') Front-End
+              span >
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="3")
+              p(itemprop='name') Marketing society
+        .media
+          ul.image-list
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/marketing-society/society-top-section.png', 
+                alt='Marketing Society top section', 
+                title='Marketing Society top section')
+                figcaption Fig 1. Above the fold
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/marketing-society/society-about.png', 
+                alt='Marketing Society about', 
+                title='Marketing Society about')
+                figcaption Fig 2. About us
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/marketing-society/society-website-contact.png', 
+                alt='Marketing Society website contact', 
+                title='Marketing Society website contact')
+                figcaption Fig 3. Contact us
+      .description.seven.columns
+        h1.client(itemprop='name') 
+          a(href='http://nottingham-marketing-society.co.uk/' target="_blank" title="Nottingham University Marketing Advertising and Design Society" rel="nofollow noopener") Marketing Society
+        p.date 2013, Oct–
+        p.tags(itemprop='keywords')
+          i.fa.fa-tags
+          |  HTML, CSS, JS, PHP, jQuery
+        .brief
+          p As CTO of Nottingham University’s Marketing, Advertising and Design Society, I was in charge of designing and developing the society’s website. The website’s main purpose was to facilitate communication between us, committee members, and the members of our society. It also explained the nature of our society and displayed our event dates.
+        .conclusion
+          p The society’s website became our main communication channel along with social media.          

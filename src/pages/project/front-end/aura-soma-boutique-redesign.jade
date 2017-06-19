@@ -22,63 +22,61 @@ block page-profession
   h2.header-heading #{i18n.name}, Front-End Developer
 
 block project
-  .main
+  .main(itemscope, itemtype='http://schema.org/CreativeWork')
     .container
-      .sixteen.columns(itemscope, itemtype='http://schema.org/CreativeWork')
-        .nine.columns
-          .breadcrumbs-top
-            ul(itemscope itemtype="http://schema.org/BreadcrumbList")
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="1")
-                a(href='#{i18n.website}', 
-                title='#{i18n.name}, Portfolio Homepage', 
-                itemprop="item")
-                  span(itemprop="name") Home
-                span >
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="2")
-                a(href='#{i18n.website}/category/front-end.html', 
-                title='#{i18n.name}, Front-End projects', 
-                itemprop="item")
-                  span(itemprop='name') Front-End
-                span >
-              li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-                meta(itemprop="position" content="3")
-                p(itemprop='name') Aura Soma Boutique Redesign
-          .media
-            ul.image-list
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/aura-soma-boutique-redesign/aura-soma-product-page.png', 
-                  alt='Aura Soma Boutique - new product page', 
-                  title='Aura Soma Boutique - new product page')
-                  figcaption Fig 1. New product page
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/aura-soma-boutique-redesign/aura-soma-category-list.png', 
-                  alt='Aura Soma Boutique - category list', 
-                  title='Aura Soma Boutique - category list')
-                  figcaption Fig 2. New category list
-              li
-                .divider
-                figure
-                  img(itemprop='image', 
-                  src='../../images/aura-soma-boutique-redesign/aura-soma-checkout.png', 
-                  alt='Aura Soma Boutique - checkout', 
-                  title='Aura Soma Boutique - checkout')
-                  figcaption Fig 3. New checkout
-        .description.six.columns
-          .inner-description
-            h1.client(itemprop='name') Aura Soma
-            p.date 2014, Feb–
-            p.tags(itemprop='keywords')
-              i.fa.fa-tags
-              |  Marketing Campaigns, Call-To-Action, Conversion Funnel
-            .brief
-              p Building on my previous SEO work, my client re-hired me to perform some optimisation work in order to increase their website’s conversion rate. I made ​​a number of visual enhancements both on product pages and on the conversion funnel.
-            .conclusion
-              p My client noticed a 30% increase in turnover over the first 3 months, compared with the turnover in year Y-1.
+      .nine.columns
+        .breadcrumbs-top
+          ul(itemscope itemtype="http://schema.org/BreadcrumbList")
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="1")
+              a(href='#{i18n.website}', 
+              title='#{i18n.name}, Portfolio Homepage', 
+              itemprop="item")
+                span(itemprop="name") Home
+              span >
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="2")
+              a(href='#{i18n.website}/category/front-end.html', 
+              title='#{i18n.name}, Front-End projects', 
+              itemprop="item")
+                span(itemprop='name') Front-End
+              span >
+            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+              meta(itemprop="position" content="3")
+              p(itemprop='name') Aura Soma Boutique Redesign
+        .media
+          ul.image-list
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/aura-soma-boutique-redesign/aura-soma-product-page.png', 
+                alt='Aura Soma Boutique - new product page', 
+                title='Aura Soma Boutique - new product page')
+                figcaption Fig 1. New product page
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/aura-soma-boutique-redesign/aura-soma-category-list.png', 
+                alt='Aura Soma Boutique - category list', 
+                title='Aura Soma Boutique - category list')
+                figcaption Fig 2. New category list
+            li
+              .divider
+              figure
+                img(itemprop='image', 
+                src='../../images/aura-soma-boutique-redesign/aura-soma-checkout.png', 
+                alt='Aura Soma Boutique - checkout', 
+                title='Aura Soma Boutique - checkout')
+                figcaption Fig 3. New checkout
+      .description.seven.columns
+        h1.client(itemprop='name') Aura Soma
+        p.date 2014, Feb–
+        p.tags(itemprop='keywords')
+          i.fa.fa-tags
+          |  Marketing Campaigns, Call-To-Action, Conversion Funnel
+        .brief
+          p Building on my previous SEO work, my client re-hired me to perform some optimisation work in order to increase their website’s conversion rate. I made ​​a number of visual enhancements both on product pages and on the conversion funnel.
+        .conclusion
+          p My client noticed a 30% increase in turnover over the first 3 months, compared with the turnover in year Y-1.
