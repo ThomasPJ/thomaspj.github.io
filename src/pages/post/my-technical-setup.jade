@@ -1,0 +1,72 @@
+extends ../../layouts/post
+
+block head
+  title #{i18n.name}'s Portfolio | My technical setup
+  meta(name="description", content="The core idea for my website was to build a maintainable and scalable serverless static site and deploy it on Github.")
+  meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
+  meta(property='og:type', content='blog')
+  meta(property='og:title', content="#{i18n.name}'s Portfolio | My technical setup")
+  meta(property='og:description', content="The core idea for my website was to build a maintainable and scalable serverless static site and deploy it on Github.")
+  meta(property='og:url', content='#{i18n.website}/post/my-technical-setup.html')
+  meta(name="twitter:card" content="summary")
+  meta(name="twitter:site" content="@_tpetitjean")
+  meta(name="twitter:creator" content="@_tpetitjean")
+  meta(name="twitter:title" content="#{i18n.name}'s Portfolio | My technical setup")
+  meta(name="twitter:description" content="The core idea for my website was to build a maintainable and scalable serverless static site and deploy it on Github.")
+
+block page-profession
+  h2.header-heading #{i18n.name}, Front-End Developer
+
+block post
+  .main
+    .container
+      .twelve.columns.offset-by-two
+        .post-intro-container
+          h1.intro-title My technical setup
+          p.intro-nutshell The core idea for my website 
+            a(href="#{i18n.website}",
+            title="#{i18n.name}'s personal website") (#{i18n.website})
+            |  was to build a maintainable and scalable 
+            strong serverless static site
+            | , and deploy it on Github. I wanted to have full control over the code in order to make experimentations and test third-party tools; This is why I used the following tools.
+          .post-intro-divider
+    .container
+      .twelve.columns.offset-by-two
+        .side-project-list
+          ul
+            li.side-project-item
+              a.side-project-anchor(href="http://gulpjs.com/",
+              target="_blank",
+              title="GulpJS website",
+              rel="nofollow noopener")
+                h3.side-project-title GulpJS
+                p.side-project-content GulpJS is a task runnner that lets you automate repetitive and time-consuming tasks during development. I currently use this tool to develop and deploy my builds on Github pages.
+                p.side-project-content 
+                  strong - gulp-cssmin
+                  |  for css minification
+                p.side-project-content 
+                  strong - gulp-imagemin
+                  |  for image compression
+                p.side-project-content 
+                  strong - gulp-gh-pages
+                  |  for deployment
+            li.side-project-item
+              a.side-project-anchor(href="https://pages.github.com/",
+              target="_blank",
+              title="Github Pages website",
+              rel="nofollow noopener")
+                h3.side-project-title Github pages
+                p.side-project-content Github has a very handy feature called Github pages which allows users to deploy and host their website from their github repository. I push my development files on the dev branch and I use Gulp to push my build to the master branch (the master branch acts as my server). This solution is 
+                  strong free
+                  | , 
+                  strong secure
+                  |  and 
+                  strong highly optimised
+                  |  as it uses Github's CDN.
+            li.side-project-item
+              a.side-project-anchor(href="https://www.npmjs.com/package/jade",
+              target="_blank",
+              title="NPM jade page",
+              rel="nofollow noopener")
+                h3.side-project-title Jade templating engine
+                p.side-project-content Jade is a neat templating engine that lets you write markup fast. I'm currently using its most basic features but I'm planning on implementing mixins and other JavaScript features in the near future.
