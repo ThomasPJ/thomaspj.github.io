@@ -26,13 +26,14 @@ html(lang='en')
       .header
         .container
           .sixteen.columns
-            .header-inner.seven.columns.offset-by-one
-              a(href='#{i18n.website}', 
-              title='#{i18n.name}, Portfolio Homepage')
-                img(src='../images/thomas-petitjean.png', 
-                alt='#{i18n.name}, #{i18n.profession}', 
-                title='#{i18n.name}, #{i18n.profession}')
-                block page-profession
+            .header-inner
+              .seven.columns.offset-by-one
+                a(href='#{i18n.website}', 
+                title='#{i18n.name}, Portfolio Homepage')
+                  img(src='../images/thomas-petitjean.png', 
+                  alt='#{i18n.name}, #{i18n.profession}', 
+                  title='#{i18n.name}, #{i18n.profession}')
+                  block page-profession
       block category
       .footer
         .container

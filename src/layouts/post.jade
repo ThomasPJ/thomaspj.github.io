@@ -25,13 +25,14 @@ html(lang='en')
     .wrap
       .header
         .container
-          .header-inner.seven.columns
-            a(href='#{i18n.website}', 
-            title='#{i18n.name}, Portfolio Homepage')
-              img(src='../images/thomas-petitjean.png', 
-              alt='#{i18n.name}, #{i18n.profession}', 
-              title='#{i18n.name}, #{i18n.profession}')
-              block page-profession
+          .header-inner
+            .seven.columns
+              a(href='#{i18n.website}', 
+              title='#{i18n.name}, Portfolio Homepage')
+                img(src='../images/thomas-petitjean.png', 
+                alt='#{i18n.name}, #{i18n.profession}', 
+                title='#{i18n.name}, #{i18n.profession}')
+                block page-profession
       block post
       .footer
         .container
