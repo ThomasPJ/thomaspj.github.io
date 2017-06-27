@@ -2,17 +2,17 @@ extends ../../layouts/post
 
 block head
   title #{i18n.name}'s Portfolio | My technical setup
-  meta(name="description", content="The core idea for my website was to build a maintainable and scalable serverless static site and deploy it on Github.")
+  meta(name="description", content="The core idea for my website was to build a maintainable and scalable serverless static site, and host it on Github.")
   meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
   meta(property='og:type', content='blog')
   meta(property='og:title', content="#{i18n.name}'s Portfolio | My technical setup")
-  meta(property='og:description', content="The core idea for my website was to build a maintainable and scalable serverless static site and deploy it on Github.")
+  meta(property='og:description', content="The core idea for my website was to build a maintainable and scalable serverless static site, and host it on Github.")
   meta(property='og:url', content='#{i18n.website}/post/my-technical-setup.html')
   meta(name="twitter:card" content="summary")
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
   meta(name="twitter:title" content="#{i18n.name}'s Portfolio | My technical setup")
-  meta(name="twitter:description" content="The core idea for my website was to build a maintainable and scalable serverless static site and deploy it on Github.")
+  meta(name="twitter:description" content="The core idea for my website was to build a maintainable and scalable serverless static site, and host it on Github.")
 
 block page-profession
   h2.header-heading #{i18n.name}, Front-End Developer
@@ -26,10 +26,8 @@ block post
           p.intro-nutshell The core idea for my website 
             a(href="#{i18n.website}",
             title="#{i18n.name}'s personal website") (#{i18n.website})
-            |  was to build a maintainable and scalable 
-            strong serverless static site
-            | , and deploy it on Github. I wanted to have full control over the code in order to make experimentations and test third-party tools; This is why I used the following tools.
-          .post-intro-divider
+            |  was to develop a maintainable and scalable serverless static site, and host it on Github.
+          .post-divider
     .container
       .twelve.columns.offset-by-two
         .side-project-list
@@ -70,3 +68,9 @@ block post
               rel="nofollow noopener")
                 h3.side-project-title Jade templating engine
                 p.side-project-content Jade is a neat templating engine that lets you write markup fast. I'm currently using its most basic features but I'm planning on implementing mixins and other JavaScript features in the near future.
+    .container
+      .four.columns.offset-by-six
+        .post-divider
+        .post-cta
+          a.cta-button(href="#{i18n.website}/post/side-projects.html",
+          title="My side projects") My side projects

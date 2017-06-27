@@ -28,7 +28,7 @@ block post
             target="_blank", 
             title="#{i18n.name}'s portfolio on Github") my website
             | . I'm particularly interested in front-end performance and technical SEO (both client-side and server-side optimisations).
-          .post-intro-divider
+          .post-divider
     .container
       .sixteen.columns
         .side-project-list
@@ -56,3 +56,9 @@ block post
                   src='../images/side-projects/travis-fail.png', 
                   alt='Travis fail', 
                   title='Travis fail')
+    .container
+      .four.columns.offset-by-six
+        .post-divider
+        .post-cta
+          a.cta-button(href="#{i18n.website}/post/my-technical-setup.html",
+          title="My side projects") My technical setup
