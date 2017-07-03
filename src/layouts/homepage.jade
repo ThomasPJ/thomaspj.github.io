@@ -18,6 +18,19 @@ html(lang='en')
     link(rel='shortcut icon', type='image/x-icon', href='./favicon.ico')
     meta(name="google-site-verification" content="byS_xtakitCOcvSfFY4YYWj4-zxKYJvjwAK9H75wHlY")
     block head
+    script(type='application/ld+json').
+      {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Thomas Petitjean",
+      "url": "#{i18n.website}",
+      "sameAs": [
+        "#{i18n.twitter}",
+        "#{i18n.linkedin}",
+        "#{i18n.instagram}"
+        ]
+      }
+
   body(itemscope, itemtype="http://schema.org/WebSite")
     // Google Tag Manager (noscript)
     noscript
@@ -70,11 +83,11 @@ html(lang='en')
                       target="_blank",
                       title='Thomas Petitjean resume') My resume
                     li
-                      a(href='https://www.linkedin.com/in/petitjeanthomas/en', 
+                      a(href='#{i18n.linkedin}', 
                       target='_blank', 
                       title='Thomas Petitjean on Linkedin') Linkedin
                     li.intro-last-link
-                      a(href='https://twitter.com/_tpetitjean', 
+                      a(href='#{i18n.twitter}', 
                       target='_blank', 
                       title='_tpetitjean on Twitter') Twitter
       block all-projects
@@ -84,15 +97,15 @@ html(lang='en')
             .footer-container
               ul.footer-links
                 li
-                  a(href='https://twitter.com/_tpetitjean', 
+                  a(href='#{i18n.twitter}', 
                   target='_blank', 
                   title='_tpetitjean on Twitter') Twitter
                 li
-                  a(href='https://www.linkedin.com/in/petitjeanthomas/en', 
+                  a(href='#{i18n.linkedin}', 
                   target='_blank', 
                   title='Thomas Petitjean on Linkedin') Linkedin
                 li
-                  a(href='https://www.instagram.com/thomas_petitjean/', 
+                  a(href='#{i18n.instagram}', 
                   target='_blank', 
                   title='thomas_petitjean on Instagram') Instagram
               .footer-signature
