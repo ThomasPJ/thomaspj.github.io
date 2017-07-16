@@ -1,4 +1,4 @@
-Thomas Petitjean - personal portfolio
+Thomas Petitjean's professional portfolio
 ========================
 
 ## Introduction
@@ -38,17 +38,17 @@ This portfolio features a series of projects I have worked on as a project manag
 4. Add url in sitemap
 
 ## Next steps
-- [ ] Use `<picture>` element
-- [ ] Dynamic resizing of images: [ImageOptim](https://imageoptim.com/api/get?username=)
-- [ ] About page
+- [ ] ~~Use `<picture>` element~~
+- [ ] ~~Dynamic resizing of images: [ImageOptim](https://imageoptim.com/api/get?username=)~~
+- [x] About page
 - [x] Resume link
 - [x] ~~CSS animations~~
 - [ ] Refactor CSS
-- [ ] Permalinks
-- [ ] Cloudflare setup
+- [ ] ~~Permalinks~~
+- [ ] ~~Cloudflare setup~~
 - [x] Image size reduction
 - [x] Sitemap
 - [ ] Update robots.txt
 - [x] Remove unused CSS rules
-- [ ] Pass markdown content into jade files on build
-- [ ] Automate sitemap update on build
+- [ ] ~~Pass markdown content into jade files on build~~
+- [ ] ~~Automate sitemap update on build~~
