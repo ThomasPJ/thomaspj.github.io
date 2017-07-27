@@ -15,7 +15,8 @@ html(lang='en')
     meta(name="viewport", content="width=device-width,initial-scale=1,user-scalable=no")
     link(rel="stylesheet", href="./styles/index.css")
     link(href='https://fonts.googleapis.com/css?family=Signika:300,400', rel='stylesheet')
-    link(rel='shortcut icon', type='image/x-icon', href='./favicon.ico')
+    link(rel='icon', type='image/png', sizes="32x32" href='./favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes="16x16" href='./favicon-16x16.png')
     meta(name="google-site-verification" content="byS_xtakitCOcvSfFY4YYWj4-zxKYJvjwAK9H75wHlY")
     block head
     script(type='application/ld+json').
@@ -81,7 +82,11 @@ html(lang='en')
                     li
                       a(href='#{i18n.website}/resume/thomas-petitjean.pdf',
                       target="_blank",
-                      title='Thomas Petitjean resume') My resume
+                      title='Thomas Petitjean resume') Resume
+                    li
+                      a(href='#{i18n.blog}',
+                      target="_blank",
+                      title="Thomas Petitjean's blog") Blog
                     li
                       a(href='#{i18n.linkedin}', 
                       target='_blank', 
