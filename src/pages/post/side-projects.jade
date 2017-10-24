@@ -34,6 +34,24 @@ block post
         .side-project-list
           ul
             li.side-project-item.side-project-item--bottom
+              a.side-project-anchor(href="https://github.com/sintaxi/harp",
+              target="_blank",
+              rel="nofollow noopener",
+              title="Harp / Github repo")
+                h3.side-project-title HarpJS
+                p.side-project-content I recently stumbled upon Harp, a very cool static site server / generator. Harp compiles Jade, Markdown, Stylus and Sass out of the box and creates static assets in a blink of an eye. I really like how lightweight and straightforward it is, you can get started in seconds without any configuration, all the magic happens in the background. No fancy web framework here, just simple front-end publishing.
+                p.side-project-content 
+                  strong - sudo npm install -g harp
+                p.side-project-content 
+                  strong - harp init myproject
+                p.side-project-content 
+                  strong - harp server myproject
+                figure.side-project-figure
+                  img(itemprop='image', 
+                  src='../images/side-projects/harp-github.png', 
+                  alt='Harp / Github repo', 
+                  title='Harp / Github repo')
+            li.side-project-item.side-project-item--bottom
               a.side-project-anchor(href="https://github.com/ThomasPJ/thomaspj.github.io/commit/4a78a7a8edb8640520a52f58dcc2598e8b99d613",
               target="_blank",
               title="ThomasPJ / AMP Github commit page")
