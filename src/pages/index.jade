@@ -2,11 +2,11 @@ extends ../layouts/homepage
 
 block head
   title #{i18n.name}, #{i18n.profession} | Portfolio
-  meta(name="description", content="Project Manager, UBC grad, ex PM and SEO at altima, ex front-end dev at adveris. Specialized in e-commerce, web performance and search engine optimization.")
+  meta(name="description", content="Project Manager, UBC alum, ex PM and SEO at altima, ex front-end dev at adveris. Specialized in e-commerce, web performance and search engine optimization.")
   meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
   meta(property='og:type', content='website')
   meta(property='og:title', content="#{i18n.name}, #{i18n.profession} | Portfolio")
-  meta(property='og:description', content='Project Manager, UBC grad, ex PM and SEO at altima, ex front-end dev at adveris. Specialized in e-commerce, web performance and search engine optimization.')
+  meta(property='og:description', content='Project Manager, UBC alum, ex PM and SEO at altima, ex front-end dev at adveris. Specialized in e-commerce, web performance and search engine optimization.')
   meta(property='og:url', content='#{i18n.website}')
   meta(property='og:image:url', content='#{i18n.website}/images/thomas-petitjean.png')
   meta(property='og:image:alt', content="#{i18n.name}, #{i18n.profession} | Portfolio")
@@ -16,7 +16,7 @@ block head
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
   meta(name="twitter:title" content="#{i18n.name}, #{i18n.profession} | Portfolio")
-  meta(name="twitter:description" content="Project Manager, UBC grad, ex PM and SEO at altima, ex front-end dev at adveris. Specialized in e-commerce, web performance and search engine optimization.")
+  meta(name="twitter:description" content="Project Manager, UBC alum, ex PM and SEO at altima, ex front-end dev at adveris. Specialized in e-commerce, web performance and search engine optimization.")
 
 block all-projects
   .main
@@ -24,7 +24,7 @@ block all-projects
       .fifteen.columns.offset-by-one
         .highlights
           h2.highlight-title
-            strong Latest
+            strong Posts
           .highlight-entry.highlight-entry-post.highlight-entry--bottom.seven.columns
             a(href='./post/my-technical-setup.html', 
               title='My technical setup')
