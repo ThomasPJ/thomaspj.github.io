@@ -2,17 +2,17 @@ extends ../../layouts/post
 
 block head
   title #{i18n.name}'s Portfolio | Side projects
-  meta(name="description", content="Here's a list of side projects I'm currently working on.")
+  meta(name="description", content="Here's a list of things I like to experiment with in my spare time.")
   meta(property='og:site_name', content="#{i18n.name}'s Portfolio")
   meta(property='og:type', content='blog')
   meta(property='og:title', content="#{i18n.name}'s Portfolio | Side projects")
-  meta(property='og:description', content="Here's a list of side projects I'm currently working on.")
+  meta(property='og:description', content="Here's a list of things I like to experiment with in my spare time.")
   meta(property='og:url', content='#{i18n.website}/post/side-projects.html')
   meta(name="twitter:card" content="summary")
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
   meta(name="twitter:title" content="#{i18n.name}'s Portfolio | Side projects")
-  meta(name="twitter:description" content="Here's a list of side projects I'm currently working on.")
+  meta(name="twitter:description" content="Here's a list of things I like to experiment with in my spare time.")
 
 block page-profession
   h2.header-heading #{i18n.name}, Front-End Developer
@@ -20,57 +20,53 @@ block page-profession
 block post
   .main
     .container
-      .twelve.columns.offset-by-two
-        .post-intro-container
-          h1.intro-title Side projects
-          p.intro-nutshell In my free time I like to stay up-to-date with the latest Search Engine Optimization trends and I enjoy trying out new front-end techniques on 
+      .twelve.columns.full
+        a.home-link(href='#{i18n.website}', title='Portfolio Homepage') ← Homepage
+        h1.client-full(itemprop='name') Side projects
+        p.date-full 2017
+        p.tags-full(itemprop='keywords')
+          i.fa.fa-tags
+          |  Accelerated Mobile Pages, SEO, Continuous Deployment, Continuous Integration, Serverless Static Site
+        .brief-full
+          p In my free time I like to stay up-to-date with the latest Search Engine Optimization trends and I enjoy trying out new front-end techniques on 
             a(href="https://github.com/ThomasPJ/thomaspj.github.io", 
             target="_blank", 
             title="#{i18n.name}'s portfolio on Github") my website
             | . I'm particularly interested in front-end performance and technical SEO (both client-side and server-side optimisations).
-          .post-divider
-    .container
-      .sixteen.columns
-        .side-project-list
-          ul
-            li.side-project-item.side-project-item--bottom
-              a.side-project-anchor(href="https://github.com/sintaxi/harp",
-              target="_blank",
-              rel="nofollow noopener",
-              title="Harp / Github repo")
-                h3.side-project-title HarpJS
-                p.side-project-content I recently stumbled upon Harp, a very cool static site server / generator. Harp compiles Jade, Markdown, Stylus and Sass out of the box and creates static assets in a blink of an eye. I really like how lightweight and straightforward it is, you can get started in seconds without any configuration, all the magic happens in the background. No fancy web framework here, just simple front-end publishing.
-                p.side-project-content 
-                  strong - sudo npm install -g harp
-                p.side-project-content 
-                  strong - harp init myproject
-                p.side-project-content 
-                  strong - harp server myproject
-                figure.side-project-figure
-                  img(itemprop='image', 
-                  src='../images/side-projects/harp-github.png', 
-                  alt='Harp / Github repo', 
-                  title='Harp / Github repo')
-            li.side-project-item.side-project-item--bottom
-              a.side-project-anchor(href="https://github.com/ThomasPJ/thomaspj.github.io/commit/4a78a7a8edb8640520a52f58dcc2598e8b99d613",
-              target="_blank",
-              title="ThomasPJ / AMP Github commit page")
-                h3.side-project-title Accelerated Mobile Pages
-                p.side-project-content I've finally made some time to look into Google's AMP Project. Aside from the technical implementation itself, I'm interested to see how Google will process my new AMP blog posts. Does it index those pages faster than regular pages? Will the rest of my website benefit from it?
-                p.side-project-content Wait and see.
-                figure.side-project-figure
-                  img(itemprop='image', 
-                  src='../images/side-projects/amp-validation.jpg', 
-                  alt='AMP Validation', 
-                  title='AMP Validation')
-            li.side-project-item
-              a.side-project-anchor(href="https://github.com/ThomasPJ/thomaspj.github.io/commit/44a7db25357519bf85a63b191619eec3bf4cedda",
-              target="_blank",
-              title="ThomasPJ / Travis Github commit page")
-                h3.side-project-title Deploying through Travis CI
-                p.side-project-content I've recently tried to link my repo's dev branch to Travis CI. My goal is to have Travis handle the "gulp" and "gulp deploy" tasks right after my commits (kind of like Jekyll). This would save me a lot of time and make my workflow much smoother. Unfortunately my first attempts have failed and I cannot seem to find a logical explanation for it.
-                figure.side-project-figure
-                  img(itemprop='image', 
-                  src='../images/side-projects/travis-fail.png', 
-                  alt='Travis fail', 
-                  title='Travis fail')
+          h3 HarpJS
+          p I recently stumbled upon 
+            a(href="https://github.com/sintaxi/harp", 
+            target="_blank",
+            rel="nofollow noopener",
+            title="Harp Github Repo") Harp
+            | , a very cool static site server / generator. Harp compiles Jade, Markdown, Stylus and Sass out of the box and creates static assets in a blink of an eye. I really like how lightweight and straightforward it is, you can get started in seconds without any configuration, all the magic happens in the background. No fancy web framework here, just simple front-end publishing.
+          figure
+            img(itemprop='image', 
+            src='../images/side-projects/harp-github.png', 
+            alt='Harp / Github repo', 
+            title='Harp / Github repo')
+            figcaption Fig 1. Harp Github Repo
+          h3 Accelerated Mobile Pages  
+          p 
+            a(href="https://github.com/ThomasPJ/thomaspj.github.io/commit/4a78a7a8edb8640520a52f58dcc2598e8b99d613", 
+            target="_blank",
+            title="ThomasPJ / AMP Github commit page") I've finally made some time to look into Google's AMP project
+            | . Aside from the technical implementation itself, I'm interested to see how Google will process my new AMP blog posts. Does it index those pages faster than regular pages? Will the rest of my website benefit from it? Wait and see.
+          figure
+            img(itemprop='image', 
+            src='../images/side-projects/amp-validation.jpg', 
+            alt='AMP Validation', 
+            title='AMP Validation')
+            figcaption Fig 2. AMP Validation
+          h3 Deploying through Travis CI
+          p 
+            a(href="https://github.com/ThomasPJ/thomaspj.github.io/commit/44a7db25357519bf85a63b191619eec3bf4cedda", 
+            target="_blank",
+            title="ThomasPJ / Travis Github commit page") I recently tried to link my repo's dev branch to Travis CI
+            | . My goal is to have Travis handle the "gulp" and "gulp deploy" tasks right after my commits (kind of like Jekyll). This would save me a lot of time and make my workflow much smoother. Unfortunately my first attempts have failed.
+          figure
+            img(itemprop='image', 
+            src='../images/side-projects/travis-fail.png', 
+            alt='Travis fail', 
+            title='Travis fail')
+            figcaption Fig 3. Attempting to deploy through Travis CI

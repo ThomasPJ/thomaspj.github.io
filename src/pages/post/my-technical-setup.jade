@@ -20,48 +20,43 @@ block page-profession
 block post
   .main
     .container
-      .twelve.columns.offset-by-two
-        .post-intro-container
-          h1.intro-title My technical setup
-          p.intro-nutshell My goal for this website was to develop a simple and scalable serverless static site. Here are the tools I used to make it possible.
-          .post-divider
-    .container
-      .twelve.columns.offset-by-two
-        .side-project-list
-          ul
-            li.side-project-item.side-project-item--bottom
-              a.side-project-anchor(href="http://gulpjs.com/",
-              target="_blank",
-              title="GulpJS website",
-              rel="nofollow noopener")
-                h3.side-project-title GulpJS
-                p.side-project-content GulpJS is a task runnner that lets you automate repetitive and time-consuming tasks during development. I currently use this tool to develop and deploy my builds on Github pages.
-                p.side-project-content 
-                  strong - gulp-cssmin
-                  |  for css minification
-                p.side-project-content 
-                  strong - gulp-imagemin
-                  |  for image compression
-                p.side-project-content 
-                  strong - gulp-gh-pages
-                  |  for deployment
-            li.side-project-item.side-project-item--bottom
-              a.side-project-anchor(href="https://pages.github.com/",
-              target="_blank",
-              title="Github Pages website",
-              rel="nofollow noopener")
-                h3.side-project-title Github pages
-                p.side-project-content Github has a very handy feature called Github pages which allows users to deploy and host their website from their github repository. I push my development files on the dev branch and I use Gulp to push my build to the master branch (the master branch acts as my server). This solution is 
-                  strong free
-                  | , 
-                  strong secure
-                  |  and 
-                  strong highly optimised
-                  |  as it uses Github's CDN.
-            li.side-project-item
-              a.side-project-anchor(href="https://www.npmjs.com/package/jade",
-              target="_blank",
-              title="NPM jade page",
-              rel="nofollow noopener")
-                h3.side-project-title Jade templating engine
-                p.side-project-content Jade is a neat templating engine that lets you write markup fast. I'm currently using its most basic features but I'm planning on implementing mixins and other JavaScript features in the near future.
+      .twelve.columns.full
+        a.home-link(href='#{i18n.website}', title='Portfolio Homepage') ← Homepage
+        h1.client-full(itemprop='name') My technical setup
+        p.date-full Present
+        p.tags-full(itemprop='keywords')
+          i.fa.fa-tags
+          |  GulpJS, Github Pages, Continuous Integration, jade, templating engine
+        .brief-full
+          p My goal for this website was to develop a simple and scalable serverless static site. Here are the tools I used to make it possible.
+          h3 GulpJS
+          p 
+            a(href="https://gulpjs.com", 
+            target="_blank",
+            rel="nofollow noopener",
+            title="GulpJS") GulpJS
+            |  is a task runnner that lets you automate repetitive and time-consuming tasks during development. 
+            a(href="https://github.com/ThomasPJ/thomaspj.github.io/blob/dev/Gulpfile.js", 
+            target="_blank",
+            title="#{i18n.name}'s Gulp file on Github") I currently use this tool to develop and deploy my builds on Github pages
+            | .
+          figure
+            img(itemprop='image', 
+            src='../images/my-technical-setup/gulp-file.png', 
+            alt='Gulp file', 
+            title='Gulp file')
+            figcaption Fig 1. Gulp file
+          h3 Github Pages
+          p Github has a very handy feature called 
+            a(href="https://pages.github.com", 
+            target="_blank",
+            rel="nofollow noopener",
+            title="Github Pages") Github pages
+            |  which allows users to deploy and host their website from their github repository. I push my development files on the dev branch and I use Gulp to push my build to the master branch (the master branch acts as my server). This solution is free, secure, and highly optimised as it uses Github's CDN.
+          h3 Jade templating engine
+          p 
+            a(href="http://jade-lang.com", 
+            target="_blank",
+            rel="nofollow noopener",
+            title="Jade Language") Jade
+            |  is a neat templating engine that lets you write markup fast. I'm currently using its most basic features but I'm planning on implementing mixins and other JavaScript features in the near future.

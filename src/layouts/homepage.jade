@@ -97,18 +97,26 @@ html(lang='en', dir="ltr")
         .container
           .sixteen.columns
             .footer-container
-              ul.footer-links
-                li
-                  a(href='#{i18n.twitter}', 
-                  target='_blank', 
-                  title='_tpetitjean on Twitter') Twitter
-                li
-                  a(href='#{i18n.linkedin}', 
-                  target='_blank', 
-                  title='Thomas Petitjean on Linkedin') Linkedin
-                li
-                  a(href='#{i18n.instagram}', 
-                  target='_blank', 
-                  title='thomas_petitjean on Instagram') Instagram
-              .footer-signature
-                p #{i18n.name} - 2017
+              .seven.columns.offset-by-one
+                ul.footer-links
+                  li
+                    a(href='#{i18n.github}', 
+                    target='_blank', 
+                    title='ThomasPJ on Github') Github
+                  li
+                    a(href='#{i18n.twitter}', 
+                    target='_blank', 
+                    title='_tpetitjean on Twitter') Twitter
+                  li
+                    a(href='#{i18n.linkedin}', 
+                    target='_blank', 
+                    title='Thomas Petitjean on Linkedin') Linkedin
+                  li
+                    a(href='#{i18n.instagram}', 
+                    target='_blank', 
+                    title='thomas_petitjean on Instagram') Instagram
+                .footer-signature
+                  p Designed and built by 
+                    a(href='#{i18n.website}/post/about.html',
+                    title='Thomas Petitjean About Page') #{i18n.name}
+                    | .
