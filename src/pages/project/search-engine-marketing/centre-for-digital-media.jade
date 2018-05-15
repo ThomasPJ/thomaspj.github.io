@@ -53,6 +53,13 @@ block project
               .divider
               figure
                 img(itemprop='image', 
+                src='../../images/centre-for-digital-media/thumb.png', 
+                alt='Centre for Digital Media', 
+                title='Centre for Digital Media')
+            li
+              .divider
+              figure
+                img(itemprop='image', 
                 src='../../images/centre-for-digital-media/robots.png', 
                 alt='Robots.txt file', 
                 title='Robots.txt file')
@@ -81,18 +88,18 @@ block project
           i.fa.fa-tags
           |  crawl budget, pagination, redirections, duplicate content, website transition, hreflang
         .brief
-          p I've been working as a Search Engine Optimization consultant at the Centre for Digital Media since January 2018. I'm responsible for defining and implementing new SEO strategies for the school's website (thecdm.ca). I carry out front-end & back-end optimizations, and create engaging and SEO-ready content.
+          p I've been working as a Search Engine Optimization consultant at the Centre for Digital Media since January 2018. I'm responsible for defining and implementing new SEO strategies for the school's website (thecdm.ca). I carry out front-end & back-end optimizations and create engaging and SEO-ready content.
           h3.brief-nutshell Crawl budget
-          p Our website was built with Drupal and has been through a series of transitions in the past decade. This had lead to the accumulation of old, low-quality pages, and even inaccurate content. Our crawl demand was getting too high and the increasing number of pages was preventing us from ranking well. 
+          p Our website was built with Drupal and has been through a series of transitions in the past decade. This had lead to the accumulation of old, low-quality pages, and even inaccurate content. Our crawl demand was getting higher than needed and the increasing number of pages was preventing us from ranking well.
           p I focused on removing and redirecting old pages and directories to more recent pieces of content. The idea was to indicate to crawlers which sections could be removed from the index and which pages had to be crawled and indexed in priority.
+          p Event pages are a good example of old, low-quality pages. The school hosts a number of events every year and those events are largely advertised on the website. Hundreds of event pages had been created since 2010 and none of them was providing useful information to our visitors. Having such a large number of low-quality pages was diluting our ranking potential, thus I chose to redirect them to our main event landing page to remove them from the crawlers' index.
           h3.brief-nutshell Managing redirections
-          p Event pages are a good example of old, low-quality pages. The school hosts a number of events every year and those events are largely advertised on the website. Hundreds of event pages had been created since 2010 and none of them were providing useful information to our visitors. Having such a large number of low-quality pages was diluting our ranking potential, I chose to redirect them to our main event landing page with the following .htaccess regex: 
-          p
+          p Implementing the right redirections or the right status codes can become a daunting task when hundreds (if not thousands) of pages have to be processed. I added manual redirections to content pages (like articles or news posts) as those pages had to be processed on a case-by-case basis. However, I used apache regex in our .htaccess for pages that needed the same redirection rule. Here's what I implemented for our event pages:
             em.code-snippet RewriteCond %{REQUEST_URI} ^/events/201[1234567](.+) [NC]
             em.code-snippet RewriteRule .* https://%{HTTP_HOST}/calendar/events [R=301,L]
           h3.brief-nutshell Duplicate content
-          p Getting rid of duplicate content was also a challenge. The most interesting issue I had was with our old mobile site, which is hosted on a subdomain (m.thecdm.ca). When our "reponsive design transition" occured, a redirect rule to our main website (thecdm.ca) was implemented since the mobile version of our site was no longer needed. However the redirect rule stopped working when our SSL certificate expired. The entire "m" subdomain was returning a 200 status code, making it fully accessible to bots and visitors...
+          p Getting rid of duplicate content was also a challenge. The most interesting issue I had was with our old mobile site, which is hosted on a subdomain (m.thecdm.ca). When our "responsive design transition" occurred, a redirect rule to our main website (thecdm.ca) was implemented since the mobile version of our site was no longer needed. However, the redirect rule stopped working when our SSL certificate expired. The entire "m" subdomain was returning a 200 status code, making it fully accessible to bots and visitors...
           h3.brief-nutshell A few more things I implemented
           p - Hreflang tags for our program page. I chose the sitemap option to implement those tags because of a back-end limitation in our system.
           p - Pagination on our list pages to help reduce our crawl demand.
-          p - Configuration of the right status code on certain pages returning a 200 instead of a 404 (caused by a limitation in drupal).
+          p - Configuration of the right status code on certain pages returning a 200 instead of a 404 (caused by a limitation in Drupal).
