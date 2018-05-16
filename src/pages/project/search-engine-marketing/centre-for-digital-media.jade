@@ -94,7 +94,9 @@ block project
           p I focused on removing and redirecting old pages and directories to more recent pieces of content. The idea was to indicate to crawlers which sections could be removed from the index and which pages had to be crawled and indexed in priority.
           p Event pages are a good example of old, low-quality pages. The school hosts a number of events every year and those events are largely advertised on the website. Hundreds of event pages had been created since 2010 and none of them was providing useful information to our visitors. Having such a large number of low-quality pages was diluting our ranking potential, thus I chose to redirect them to our main event landing page to remove them from the crawlers' index.
           h3.brief-nutshell Managing redirections
-          p Implementing the right redirections or the right status codes can become a daunting task when hundreds (if not thousands) of pages have to be processed. I added manual redirections to content pages (like articles or news posts) as those pages had to be processed on a case-by-case basis. However, I used apache regex in our .htaccess for pages that needed the same redirection rule. Here's what I implemented for our event pages:
+          p Implementing the right redirections or the right status codes can be quite daunting when hundreds (if not thousands) of pages have to be processed.
+          p - I added manual redirections to content pages - like articles or news posts - as those pages had to be processed on a case-by-case basis. 
+          p - I used apache regex for sets of pages that needed the same redirect rule. Example for our event pages:
             em.code-snippet RewriteCond %{REQUEST_URI} ^/events/201[1234567](.+) [NC]
             em.code-snippet RewriteRule .* https://%{HTTP_HOST}/calendar/events [R=301,L]
           h3.brief-nutshell Duplicate content
