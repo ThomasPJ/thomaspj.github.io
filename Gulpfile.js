@@ -5,7 +5,6 @@ var gulp = require("gulp"),
     cssmin = require("gulp-cssmin"),
     ghPages = require('gulp-gh-pages'),
     autoprefixer = require("gulp-autoprefixer"),
-    imagemin = require('gulp-imagemin'),
 
     i18n = require("./src/i18n"),
 
@@ -16,50 +15,18 @@ var gulp = require("gulp"),
       }
 
 gulp.task("assets", function(){
-  return gulp.src("src/assets/**")
+  return gulp.src(["src/seo/**", "src/assets/**"])
     .pipe(gulp.dest("dist"))
 })
-
 gulp.task("images", function(){
   return gulp.src("src/images/**")
-    .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 5}),
-      imagemin.jpegtran({progressive: true})
-    ]))
     .pipe(gulp.dest("dist/images"))
 })
-
-gulp.task("projects", function(){
-  return gulp.src("src/pages/project/*/**.jade")
-    .pipe(jade(markupOptions))
-    .pipe(gulp.dest("dist/project"))
-})
-gulp.task("posts", function(){
-  return gulp.src("src/pages/post/**.jade")
-    .pipe(jade(markupOptions))
-    .pipe(gulp.dest("dist/post"))
-})
-gulp.task("ampposts", function(){
-  return gulp.src("src/pages/post/amp/**.jade")
-    .pipe(jade(markupOptions))
-    .pipe(gulp.dest("dist/amp/post"))
-})
-gulp.task("photo", function(){
-  return gulp.src("src/pages/photography/index.jade")
-    .pipe(jade(markupOptions))
-    .pipe(gulp.dest("dist/photography"))
-})
-gulp.task("categories", function(){
-  return gulp.src("src/pages/category/**.jade")
-    .pipe(jade(markupOptions))
-    .pipe(gulp.dest("dist/category"))
-})
-gulp.task("index", function(){
-  return gulp.src("src/pages/*.jade")
+gulp.task("pages", function(){
+  return gulp.src(["src/pages/*.jade", "src/pages/*/*/**.jade", "src/pages/*/**.jade"])
     .pipe(jade(markupOptions))
     .pipe(gulp.dest("dist"))
 })
-
 gulp.task("styles", function(){
   return gulp.src("src/styles/**.styl")
     .pipe(stylus())
@@ -69,16 +36,11 @@ gulp.task("styles", function(){
     .pipe(gulp.dest("dist/styles"))
 })
 
-gulp.task("seo", function(){
-  return gulp.src("src/seo/*")
-    .pipe(gulp.dest("dist"))
-})
-
-gulp.task("default", ["projects", "posts", "ampposts", "photo", "categories", "index", "styles", "assets", "images", "seo"])
+gulp.task("default", ["assets", "images", "pages", "styles"])
 
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
     .pipe(ghPages({
       branch: "master"
-    }));
-});
+    }))
+})

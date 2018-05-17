@@ -5,6 +5,18 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://thomaspj.github.io/post/amp/about.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://thomaspj.github.io/post/amp/sprint-and-reflect.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://thomaspj.github.io/post/amp/understanding-the-problem-space.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://thomaspj.github.io/post/about.html</loc>
     <changefreq>weekly</changefreq>
   </url>
