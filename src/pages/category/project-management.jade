@@ -15,8 +15,46 @@ block head
   meta(name="twitter:card" content="summary")
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
-  meta(name="twitter:title" content="#{i18n.name}'s Portfolio | Project Management projects")
-  meta(name="twitter:description" content="I have been working as a project manager and scrum master for the past 3 years. I work with multidisciplinary teams that include: CRO consultants, UX consultants, designers, developers...")
+  script(type='application/ld+json').
+    {
+    "@context": "http://schema.org",
+    "@type": "CollectionPage",
+    "author": {
+      "@type": "Person",
+      "name": "Thomas Petitjean",
+      "sameAs": [
+        "#{i18n.twitter}",
+        "#{i18n.linkedin}",
+        "#{i18n.instagram}"
+        ]
+    },
+    "hasPart": [
+      {
+        "@type": "WebSite",
+        "name": "PCI Developments",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/project-management/pci-developments.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Club Med Luxe",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/project-management/club-med-luxe.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Petit Bateau (Christmas project)",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/project-management/petit-bateau-christmas-project.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Club Med",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/project-management/club-med.html"
+      }
+    ]
+    }
   
 block page-profession
   h2.header-heading #{i18n.name}, Project Manager

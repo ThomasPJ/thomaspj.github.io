@@ -15,8 +15,40 @@ block head
   meta(name="twitter:card" content="summary")
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
-  meta(name="twitter:title" content="#{i18n.name}'s Portfolio | Front-End projects")
-  meta(name="twitter:description" content="I have 4 years of experience in front-end development. Proficiency: git, HTML, CSS, JS, continuous integration...")
+  script(type='application/ld+json').
+    {
+    "@context": "http://schema.org",
+    "@type": "CollectionPage",
+    "author": {
+      "@type": "Person",
+      "name": "Thomas Petitjean",
+      "sameAs": [
+        "#{i18n.twitter}",
+        "#{i18n.linkedin}",
+        "#{i18n.instagram}"
+        ]
+    },
+    "hasPart": [
+      {
+        "@type": "WebSite",
+        "name": "Aura Soma Boutique Redesign",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/front-end/aura-soma-boutique-redesign.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Marketing Society",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/front-end/marketing-society.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Romy and Ray",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/front-end/romy-and-ray.html"
+      }
+    ]
+    }
 
 block page-profession
   h2.header-heading #{i18n.name}, Front-End Developer

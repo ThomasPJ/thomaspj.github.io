@@ -15,8 +15,25 @@ block head
   meta(name="twitter:card" content="summary")
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
-  meta(name="twitter:title" content="#{i18n.name}'s Portfolio | Club Med Luxe")
-  meta(name="twitter:description" content="This project taught me a lot about new front-end development techniques and SEO best practices on single-page applications.")
+  script(type='application/ld+json').
+    {
+      "@context": "http://schema.org",
+      "@type": "CreativeWork",
+      "url": "#{i18n.website}/project/project-management/club-med-luxe.html",
+      "name": "Club Med Luxe",
+      "description": "This project taught me a lot about new front-end development techniques and SEO best practices on single-page applications.",
+      "keywords": "technical project management, single-page application, reactjs, search engine optimization",
+      "image": {
+        "@type": "ImageObject",
+        "url": "#{i18n.website}/images/club-med-luxe/thumb.jpg",
+        "height": 800,
+        "width": 400
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Thomas Petitjean"
+      }
+    }
 
 block page-profession
   h2.header-heading #{i18n.name}, Project Manager

@@ -15,8 +15,25 @@ block head
   meta(name="twitter:card" content="summary")
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
-  meta(name="twitter:title" content="#{i18n.name}'s Portfolio | Aura Soma Boutique redesign")
-  meta(name="twitter:description" content="Building on my previous SEO work, my client re-hired me to perform some optimisation work in order to increase their website’s conversion rate.")
+  script(type='application/ld+json').
+    {
+      "@context": "http://schema.org",
+      "@type": "CreativeWork",
+      "url": "#{i18n.website}/project/front-end/aura-soma-boutique-redesign.html",
+      "name": "Aura Soma",
+      "description": "Building on my previous SEO work, my client re-hired me to perform some optimisation work in order to increase their website’s conversion rate.",
+      "keywords": "marketing campaigns, call-to-action, conversion funnel",
+      "image": {
+        "@type": "ImageObject",
+        "url": "#{i18n.website}/images/aura-soma-boutique-redesign/thumb.png",
+        "height": 800,
+        "width": 400
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Thomas Petitjean"
+      }
+    }
 
 block page-profession
   h2.header-heading #{i18n.name}, Front-End Developer
@@ -75,7 +92,7 @@ block project
         p.date February 2014
         p.tags(itemprop='keywords')
           i.fa.fa-tags
-          |  Marketing Campaigns, Call-To-Action, Conversion Funnel
+          |  marketing campaigns, call-to-action, conversion funnel
         .brief
           p Building on my previous SEO work, my client re-hired me to perform some optimisation work in order to increase their website’s conversion rate. I made ​​a number of visual enhancements both on product pages and on the conversion funnel.
         .conclusion

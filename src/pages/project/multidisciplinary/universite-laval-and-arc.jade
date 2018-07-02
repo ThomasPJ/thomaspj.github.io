@@ -11,8 +11,19 @@ block head
   meta(name="twitter:card" content="summary")
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
-  meta(name="twitter:title" content="#{i18n.name}'s Portfolio | Université Laval and Arthritis Research Canada")
-  meta(name="twitter:description" content="Working with Université Laval and ARC on the development of a new website for seniors and caregivers.")
+  script(type='application/ld+json').
+    {
+      "@context": "http://schema.org",
+      "@type": "CreativeWork",
+      "url": "#{i18n.website}/project/multidisciplinary/universite-laval-and-arc.html",
+      "name": "Université Laval and Arthritis Research Canada",
+      "description": "Working with Université Laval and ARC on the development of a new website for seniors and caregivers.",
+      "keywords": "qualitative interviews, UX design, project management, web development, search engine optimization",
+      "author": {
+        "@type": "Person",
+        "name": "Thomas Petitjean"
+      }
+    }
 
 block page-profession
   h2.header-heading #{i18n.name}, Digital Consultant
@@ -26,7 +37,7 @@ block project
         p.date-full Aug 2017 - Present
         p.tags-full(itemprop='keywords')
           i.fa.fa-tags
-          |  Qualitative interviews, UX design, project management, web development, search engine optimization
+          |  qualitative interviews, UX design, project management, web development, search engine optimization
         .brief-full
           h3 Context
           p In 2016, Université Laval and Arthritis Research Canada (ARC) developed 

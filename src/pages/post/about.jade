@@ -13,8 +13,17 @@ block head
   meta(name="twitter:card" content="summary")
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
-  meta(name="twitter:title" content="About #{i18n.name}")
-  meta(name="twitter:description" content="Thomas Petitjean is a search engine optimizer, front-end developer and digital project manager. He holds a Master in Digital Media from UBC.")
+  script(type='application/ld+json').
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Thomas Petitjean",
+      "sameAs": [
+        "#{i18n.twitter}",
+        "#{i18n.linkedin}",
+        "#{i18n.instagram}"
+      ]
+    }
 
 block page-profession
   h1.header-heading #{i18n.name}

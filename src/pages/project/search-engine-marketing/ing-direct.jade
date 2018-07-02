@@ -15,8 +15,25 @@ block head
   meta(name="twitter:card" content="summary")
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
-  meta(name="twitter:title" content="#{i18n.name}'s Portfolio | ING Direct")
-  meta(name="twitter:description" content="ING Direct is the No.1 online bank in France. I worked with their digital team to resolve crawling and performance related issues.")
+  script(type='application/ld+json').
+    {
+      "@context": "http://schema.org",
+      "@type": "CreativeWork",
+      "url": "#{i18n.website}/project/search-engine-marketing/ing-direct.html",
+      "name": "ING Direct",
+      "description": "ING Direct is the No.1 online bank in France. I worked with their digital team to resolve crawling and performance related issues.",
+      "keywords": "meta tags, front-end optimization, keyword analysis, content optimization, news sitemap",
+      "image": {
+        "@type": "ImageObject",
+        "url": "#{i18n.website}/images/ing-direct/thumb.png",
+        "height": 800,
+        "width": 400
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Thomas Petitjean"
+      }
+    }
 
 block page-profession
   h2.header-heading #{i18n.name}, SEO

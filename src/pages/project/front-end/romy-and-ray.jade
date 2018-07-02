@@ -15,8 +15,25 @@ block head
   meta(name="twitter:card" content="summary")
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
-  meta(name="twitter:title" content="#{i18n.name}'s Portfolio | Romy and Ray")
-  meta(name="twitter:description" content="Romy and Ray is a French clothing brand that designs high quality garment. I worked with a graphic designer in order to develop the website.")
+  script(type='application/ld+json').
+    {
+      "@context": "http://schema.org",
+      "@type": "CreativeWork",
+      "url": "#{i18n.website}/project/front-end/romy-and-ray.html",
+      "name": "Romy and Ray",
+      "description": "Romy and Ray is a French clothing brand that designs high quality garment. I worked with a graphic designer in order to develop the website.",
+      "keywords": "HTML, CSS, JS",
+      "image": {
+        "@type": "ImageObject",
+        "url": "#{i18n.website}/images/romy-and-ray/thumb.png",
+        "height": 800,
+        "width": 400
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Thomas Petitjean"
+      }
+    }
 
 block page-profession
   h2.header-heading #{i18n.name}, Front-End Developer

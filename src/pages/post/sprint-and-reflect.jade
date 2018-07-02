@@ -17,8 +17,25 @@ block head
   meta(name="twitter:card" content="summary")
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
-  meta(name="twitter:title" content="#{i18n.name}'s Portfolio | Sprint and reflect")
-  meta(name="twitter:description" content="Key takeaways from my scrum mastering experience at the Centre for Digital Media.")
+  script(type='application/ld+json').
+    {
+      "@context": "http://schema.org",
+      "@type": "CreativeWork",
+      "url": "#{i18n.website}/post/sprint-and-reflect.html",
+      "name": "Sprint and reflect",
+      "description": "Key takeaways from my scrum mastering experience at the Centre for Digital Media.",
+      "keywords": "sprint planning, review, demo, retrospective, scrum mastering, facilitation",
+      "image": {
+        "@type": "ImageObject",
+        "url": "#{i18n.website}/images/sprint-and-reflect/sprint-board-mid.jpg",
+        "height": 900,
+        "width": 675
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Thomas Petitjean"
+      }
+    }
 
 block page-profession
   h2.header-heading #{i18n.name}, Scrum Master

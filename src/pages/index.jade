@@ -15,8 +15,106 @@ block head
   meta(name="twitter:card" content="summary")
   meta(name="twitter:site" content="@_tpetitjean")
   meta(name="twitter:creator" content="@_tpetitjean")
-  meta(name="twitter:title" content="#{i18n.name}, #{i18n.profession} | Portfolio")
-  meta(name="twitter:description" content="Faculty and Search Engine Optimization consultant at the Centre for Digital Media. Specialties: agile, web performance, and search engine optimization.")
+  script(type='application/ld+json').
+    {
+    "@context": "http://schema.org",
+    "@type": "CollectionPage",
+    "author": {
+      "@type": "Person",
+      "name": "Thomas Petitjean",
+      "sameAs": [
+        "#{i18n.twitter}",
+        "#{i18n.linkedin}",
+        "#{i18n.instagram}"
+        ]
+    },
+    "hasPart": [
+      {
+        "@type": "WebSite",
+        "name": "Understanding the problem space",
+        "inLanguage": "en",
+        "url": "#{i18n.website}/post/understanding-the-problem-space.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Sprint and reflect",
+        "inLanguage": "en",
+        "url": "#{i18n.website}/post/sprint-and-reflect.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Centre for Digital Media",
+        "inLanguage": "en",
+        "url": "#{i18n.website}/project/search-engine-marketing/centre-for-digital-media.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Université Laval and ARC",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/multidisciplinary/universite-laval-and-arc.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "PCI Developments",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/project-management/pci-developments.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Club Med Luxe",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/project-management/club-med-luxe.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Petit Bateau (Christmas project)",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/project-management/petit-bateau-christmas-project.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Club Med",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/project-management/club-med.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Petit Bateau (2nd Batch)",
+        "inLanguage": "en",
+        "url": "#{i18n.website}/project/search-engine-marketing/petit-bateau-second-batch.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "ING Direct",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/search-engine-marketing/ing-direct.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Aura Soma Boutique",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/search-engine-marketing/aura-soma-boutique.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Aura Soma Boutique Redesign",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/front-end/aura-soma-boutique-redesign.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Marketing Society",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/front-end/marketing-society.html"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Romy and Ray",
+        "inLanguage": "en",
+        "url": "{#i18n.website}/project/front-end/romy-and-ray.html"
+      }
+    ]
+    }
 
 block all-projects
   .main
@@ -68,7 +166,7 @@ block all-projects
                 a.category-item-anchor(href='#{i18n.website}/project/multidisciplinary/universite-laval-and-arc.html', title='Université Laval and Arthritis Research Canada Project Page')
                   .category-item-content
                     h3.category-item-title Université Laval and ARC
-                    p.category-item-description Worked with Université Laval and Arthritis Research Canada on the design and development of a new website for seniors and caregivers in Canada.
+                    p.category-item-description Working with Université Laval and Arthritis Research Canada on the design and development of a new website for seniors and caregivers in Canada.
           li.pm-category
             h2.cat-title
               strong Project Management
@@ -121,7 +219,7 @@ block all-projects
                     title='Petit Bateau - Responsive (2nd Batch)')
                   .category-item-content
                     h3.category-item-title Petit Bateau (2nd Batch)
-                    p.category-item-description Worked as an SEO consultant for Petit Bateau. I focused on PageSpeed, 404 errors, sitemaps and structured data.
+                    p.category-item-description Worked as the lead SEO in this project. Focused on usability, PageSpeed, 404 errors, sitemaps, and structured data.
               li.seven.columns.category-item
                 a.category-item-anchor(href='#{i18n.website}/project/search-engine-marketing/ing-direct.html', 
                   title='ING Direct Project Page')
@@ -131,7 +229,7 @@ block all-projects
                     title='ING Direct')
                   .category-item-content
                     h3.category-item-title ING Direct
-                    p.category-item-description My colleague and I implemented a "news sitemap", cleaned and optimised the existing sitemaps, and solved critical errors to improve the site's indexing.
+                    p.category-item-description Implemented a "news sitemap", cleaned and optimised the existing sitemaps, and solved critical errors to improve the site's indexing.
               li.seven.columns.category-item
                 a.category-item-anchor(href='#{i18n.website}/project/search-engine-marketing/aura-soma-boutique.html', title='Aura Soma Boutique Project Page')
                   figure.thumbnail
