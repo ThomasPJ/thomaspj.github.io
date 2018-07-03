@@ -39,23 +39,23 @@ block page-profession
   h2.header-heading #{i18n.name}, Project Manager
 
 block project
-  .main(itemscope, itemtype='http://schema.org/CreativeWork')
+  .main
     .container
       .nine.columns
         .breadcrumbs-top
           ul(itemscope itemtype="http://schema.org/BreadcrumbList")
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
               meta(itemprop="position" content="1")
-              a(href='#{i18n.website}', 
-              title='#{i18n.name}, Portfolio Homepage', 
-              itemprop='item')
+              a(itemscope itemtype="http://schema.org/Thing" itemprop='item',
+              href='#{i18n.website}', 
+              title='#{i18n.name}, Portfolio Homepage')
                 span(itemprop='name') Home
               span >
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
               meta(itemprop="position" content="2")
-              a(href='#{i18n.website}/category/project-management.html', 
-              title='#{i18n.name}, Project Management projects', 
-              itemprop='item')
+              a(itemscope itemtype="http://schema.org/Thing" itemprop='item',
+              href='#{i18n.website}/category/project-management.html', 
+              title='#{i18n.name}, Project Management projects')
                 span(itemprop='name') Project Management
               span >
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
@@ -66,39 +66,35 @@ block project
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/pci-developments/thumb.jpg', 
+                img(src='../../images/pci-developments/thumb.jpg', 
                 alt='PCI Developments', 
                 title='PCI Developments')
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/pci-developments/user-interface.png', 
+                img(src='../../images/pci-developments/user-interface.png', 
                 alt='PCI Developments / User Interface', 
                 title='PCI Developments / User Interface')
                 figcaption Fig 1. User Interface of the application
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/pci-developments/whiteboard.jpg', 
+                img(src='../../images/pci-developments/whiteboard.jpg', 
                 alt='PCI Developments / Whiteboard', 
                 title='PCI Developments / Whiteboard')
                 figcaption Fig 2. Capture of our project timeline (above) and our backlog (on the left)
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/pci-developments/zenhub.png', 
+                img(src='../../images/pci-developments/zenhub.png', 
                 alt='PCI Developments / Zenhub', 
                 title='PCI Developments / Zenhub')
                 figcaption Fig 3. Capture of our Zenhub board
       .description.seven.columns.absolute
-        h1.client(itemprop='name') 
+        h1.client
           a(href='https://pci-group.com/' target="_blank" title="PCI Group" rel="nofollow noopener") PCI Developments
         p.date Jan - Apr 2017
-        p.tags(itemprop='keywords')
+        p.tags
           i.fa.fa-tags
           |  scrum mastering, sprint planning & review, demos, story points
         .brief

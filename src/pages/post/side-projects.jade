@@ -20,9 +20,9 @@ block post
     .container
       .twelve.columns.full
         a.home-link(href='#{i18n.website}', title='Portfolio Homepage') ← Homepage
-        h1.client-full(itemprop='name') Side projects
+        h1.client-full Side projects
         p.date-full 2017
-        p.tags-full(itemprop='keywords')
+        p.tags-full
           i.fa.fa-tags
           |  Accelerated Mobile Pages, SEO, Continuous Deployment, Continuous Integration, Serverless Static Site
         .brief-full
@@ -39,8 +39,7 @@ block post
             title="Harp Github Repo") Harp
             | , a very cool static site server / generator. Harp compiles Jade, Markdown, Stylus and Sass out of the box and creates static assets in a blink of an eye. I really like how lightweight and straightforward it is, you can get started in seconds without any configuration, all the magic happens in the background. No fancy web framework here, just simple front-end publishing.
           figure
-            img(itemprop='image', 
-            src='../images/side-projects/harp-github.png', 
+            img(src='../images/side-projects/harp-github.png', 
             alt='Harp / Github repo', 
             title='Harp / Github repo')
             figcaption Fig 1. Harp Github Repo
@@ -51,8 +50,7 @@ block post
             title="ThomasPJ / AMP Github commit page") I've finally made some time to look into Google's AMP project
             | . Aside from the technical implementation itself, I'm interested to see how Google will process my new AMP blog posts. Does it index those pages faster than regular pages? Will the rest of my website benefit from it? Wait and see.
           figure
-            img(itemprop='image', 
-            src='../images/side-projects/amp-validation.jpg', 
+            img(src='../images/side-projects/amp-validation.jpg', 
             alt='AMP Validation', 
             title='AMP Validation')
             figcaption Fig 2. AMP Validation
@@ -63,8 +61,7 @@ block post
             title="ThomasPJ / Travis Github commit page") I recently tried to link my repo's dev branch to Travis CI
             | . My goal is to have Travis handle the "gulp" and "gulp deploy" tasks right after my commits (kind of like Jekyll). This would save me a lot of time and make my workflow much smoother. Unfortunately my first attempts have failed.
           figure
-            img(itemprop='image', 
-            src='../images/side-projects/travis-fail.png', 
+            img(src='../images/side-projects/travis-fail.png', 
             alt='Travis fail', 
             title='Travis fail')
             figcaption Fig 3. Attempting to deploy through Travis CI

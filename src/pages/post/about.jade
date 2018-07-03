@@ -37,9 +37,9 @@ block post
             ul(itemscope itemtype="http://schema.org/BreadcrumbList")
               li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
                 meta(itemprop="position" content="1")
-                a(href='#{i18n.website}', 
-                title='#{i18n.name}, Portfolio Homepage', 
-                itemprop='item')
+                a(itemscope itemtype="http://schema.org/Thing" itemprop='item',
+                href='#{i18n.website}', 
+                title='#{i18n.name}, Portfolio Homepage')
                   span(itemprop='name') Home
                 span >
               li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
@@ -50,40 +50,35 @@ block post
               li.about-photo-item
                 .divider
                 figure
-                  img(itemprop='image', 
-                  src='../images/photos/science-world.jpg', 
+                  img(src='../images/photos/science-world.jpg', 
                   alt='Science World, Vancouver', 
                   title='Science World, Vancouver')
                   figcaption Science World, Vancouver - June 2017
               li.about-photo-item
                 .divider
                 figure
-                  img(itemprop='image', 
-                  src='../images/photos/false-creek.jpg', 
+                  img(src='../images/photos/false-creek.jpg', 
                   alt='False Creek, Vancouver', 
                   title='False Creek, Vancouver')
                   figcaption False Creek, Vancouver - May 2017
               li.about-photo-item
                 .divider
                 figure
-                  img(itemprop='image', 
-                  src='../images/photos/tartre-gaudran.jpg', 
+                  img(src='../images/photos/tartre-gaudran.jpg', 
                   alt='Tartre Gaudran, France', 
                   title='Tartre Gaudran, France')
                   figcaption Tartre Gaudran, France - April 2017
               li.about-photo-item
                 .divider
                 figure
-                  img(itemprop='image', 
-                  src='../images/photos/bowen-island.jpg', 
+                  img(src='../images/photos/bowen-island.jpg', 
                   alt='Bowen Island, Canada', 
                   title='Bowen Island, Canada')
                   figcaption Bowen Island, Canada - April 2017
               li.about-photo-item
                 .divider
                 figure
-                  img(itemprop='image', 
-                  src='../images/photos/ubc-campus.jpg', 
+                  img(src='../images/photos/ubc-campus.jpg', 
                   alt='UBC Campus, Vancouver', 
                   title='UBC Campus, Vancouver')
                   figcaption UBC Campus, Vancouver - August 2015

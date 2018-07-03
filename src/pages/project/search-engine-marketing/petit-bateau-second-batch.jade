@@ -39,23 +39,23 @@ block page-profession
   h2.header-heading #{i18n.name}, SEO
 
 block project
-  .main(itemscope, itemtype='http://schema.org/CreativeWork')
+  .main
     .container
       .nine.columns
         .breadcrumbs-top
           ul(itemscope itemtype="http://schema.org/BreadcrumbList")
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
               meta(itemprop="position" content="1")
-              a(href='#{i18n.website}', 
-              title='#{i18n.name}, Portfolio Homepage', 
-              itemprop='item')
+              a(itemscope itemtype="http://schema.org/Thing" itemprop='item',
+              href='#{i18n.website}', 
+              title='#{i18n.name}, Portfolio Homepage')
                 span(itemprop='name') Home
               span >
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
               meta(itemprop="position" content="2")
-              a(href='#{i18n.website}/category/search-engine-marketing.html', 
-              title='#{i18n.name}, Search Engine Marketing projects', 
-              itemprop='item')
+              a(itemscope itemtype="http://schema.org/Thing" itemprop='item',
+              href='#{i18n.website}/category/search-engine-marketing.html', 
+              title='#{i18n.name}, Search Engine Marketing projects')
                 span(itemprop='name') Search Engine Marketing
               span >
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
@@ -66,31 +66,28 @@ block project
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/petit-bateau-second-batch/thumb.png', 
+                img(src='../../images/petit-bateau-second-batch/thumb.png', 
                 alt='Petit Bateau', 
                 title='Petit Bateau')
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/petit-bateau-second-batch/petit-bateau-category-page.png', 
+                img(src='../../images/petit-bateau-second-batch/petit-bateau-category-page.png', 
                 alt='Petit Bateau category page', 
                 title='Petit Bateau category page')
                 figcaption Fig 1. Category page
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/petit-bateau-second-batch/petit-bateau-product-listing.png', 
+                img(src='../../images/petit-bateau-second-batch/petit-bateau-product-listing.png', 
                 alt='Petit Bateau product listing', 
                 title='Petit Bateau product listing')
                 figcaption Fig 2. Product listing
       .description.seven.columns.absolute
-        h1.client(itemprop='name') 
+        h1.client
           a(href='https://www.petit-bateau.fr/' target="_blank" title="Petit Bateau France" rel="nofollow noopener") Petit Bateau
         p.date October 2014
-        p.tags(itemprop='keywords')
+        p.tags
           i.fa.fa-tags
           |  project management, BugHerd, Redmine, SEO
         .brief

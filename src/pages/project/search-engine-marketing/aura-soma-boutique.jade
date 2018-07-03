@@ -39,23 +39,23 @@ block page-profession
   h2.header-heading #{i18n.name}, SEO
 
 block project
-  .main(itemscope, itemtype='http://schema.org/CreativeWork')
+  .main
     .container
       .nine.columns
         .breadcrumbs-top
           ul(itemscope itemtype="http://schema.org/BreadcrumbList")
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
               meta(itemprop="position" content="1")
-              a(href='#{i18n.website}', 
-              title='#{i18n.name}, Portfolio Homepage', 
-              itemprop='item')
+              a(itemscope itemtype="http://schema.org/Thing" itemprop='item',
+              href='#{i18n.website}', 
+              title='#{i18n.name}, Portfolio Homepage')
                 span(itemprop='name') Home
               span >
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
               meta(itemprop="position" content="2")
-              a(href='#{i18n.website}/category/search-engine-marketing.html', 
-              title='#{i18n.name}, Search Engine Marketing projects', 
-              itemprop='item')
+              a(itemscope itemtype="http://schema.org/Thing" itemprop='item',
+              href='#{i18n.website}/category/search-engine-marketing.html', 
+              title='#{i18n.name}, Search Engine Marketing projects')
                 span(itemprop='name') Search Engine Marketing
               span >
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
@@ -66,31 +66,28 @@ block project
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/aura-soma-boutique/aura-soma-old-homepage.png', 
+                img(src='../../images/aura-soma-boutique/aura-soma-old-homepage.png', 
                 alt='Aura Soma Boutique - old homepage', 
                 title='Aura Soma Boutique - old homepage')
                 figcaption Fig 1. Homepage
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/aura-soma-boutique/aura-soma-old-product-page.png', 
+                img(src='../../images/aura-soma-boutique/aura-soma-old-product-page.png', 
                 alt='Aura Soma Boutique - old product page', 
                 title='Aura Soma Boutique - old product page')
                 figcaption Fig 2. Product page
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/aura-soma-boutique/aura-soma-pomanders.jpg', 
+                img(src='../../images/aura-soma-boutique/aura-soma-pomanders.jpg', 
                 alt='Aura Soma Boutique - pomanders', 
                 title='Aura Soma Boutique - pomanders')
                 figcaption Fig 3. Pomanders
       .description.seven.columns.absolute
-        h1.client(itemprop='name') Aura Soma
+        h1.client Aura Soma
         p.date 2014 to 2015
-        p.tags(itemprop='keywords')
+        p.tags
           i.fa.fa-tags
           |  SEO, meta tags, SMO, AdWords, Analytics, Disqus, Search Console
         .brief

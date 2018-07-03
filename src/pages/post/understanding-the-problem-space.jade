@@ -41,16 +41,16 @@ block page-profession
   h2.header-heading #{i18n.name}, Facilitator
 
 block post
-  .main(itemscope, itemtype='http://schema.org/CreativeWork')
+  .main
     .container
       .nine.columns
         .breadcrumbs-top
           ul(itemscope itemtype="http://schema.org/BreadcrumbList")
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
               meta(itemprop="position" content="1")
-              a(href='#{i18n.website}', 
-              title='#{i18n.name}, Portfolio Homepage', 
-              itemprop='item')
+              a(itemscope itemtype="http://schema.org/Thing" itemprop='item',
+              href='#{i18n.website}', 
+              title='#{i18n.name}, Portfolio Homepage')
                 span(itemprop='name') Home
               span >
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
@@ -61,47 +61,42 @@ block post
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../images/problem-space/oarrs.jpg', 
+                img(src='../images/problem-space/oarrs.jpg', 
                 alt='Objective, Adgenda, Rules and Roles for our workshop', 
                 title='Objective, Adgenda, Rules and Roles for our workshop')
                 figcaption Fig 1. Objective, Agenda, Rules & Roles (OARRS)
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../images/problem-space/workshop-agreements.jpg', 
+                img(src='../images/problem-space/workshop-agreements.jpg', 
                 alt='Workshop agreements', 
                 title='Workshop agreements')
                 figcaption Fig 2. Workshop agreements
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../images/problem-space/user-profile.jpg', 
+                img(src='../images/problem-space/user-profile.jpg', 
                 alt='User profile', 
                 title='User profile')
                 figcaption Fig 3. User profile
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../images/problem-space/user-journey.jpg', 
+                img(src='../images/problem-space/user-journey.jpg', 
                 alt='User journey', 
                 title='User journey')
                 figcaption Fig 4. User journey
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../images/problem-space/crazy-eight.jpg', 
+                img(src='../images/problem-space/crazy-eight.jpg', 
                 alt='Crazy eight', 
                 title='Crazy eight')
                 figcaption Fig 5. Crazy 8s
       .description.seven.columns.absolute
-        h1.client(itemprop='headline') Understanding the problem space
+        h1.client Understanding the problem space
         p.date May 2017
-        p.tags(itemprop='keywords')
+        p.tags
           i.fa.fa-tags
           |  facilitation, agile workshop, project goals, user profiles, user journeys
         .brief

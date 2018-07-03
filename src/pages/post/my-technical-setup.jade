@@ -20,9 +20,9 @@ block post
     .container
       .twelve.columns.full
         a.home-link(href='#{i18n.website}', title='Portfolio Homepage') ← Homepage
-        h1.client-full(itemprop='name') My technical setup
+        h1.client-full My technical setup
         p.date-full Present
-        p.tags-full(itemprop='keywords')
+        p.tags-full
           i.fa.fa-tags
           |  GulpJS, Github Pages, Continuous Integration, jade, templating engine
         .brief-full
@@ -39,8 +39,7 @@ block post
             title="#{i18n.name}'s Gulp file on Github") I currently use this tool to develop and deploy my builds on Github pages
             | .
           figure
-            img(itemprop='image', 
-            src='../images/my-technical-setup/gulp-file.png', 
+            img(src='../images/my-technical-setup/gulp-file.png', 
             alt='Gulp file', 
             title='Gulp file')
             figcaption Fig 1. Gulp file

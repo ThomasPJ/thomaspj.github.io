@@ -39,23 +39,23 @@ block page-profession
   h2.header-heading #{i18n.name}, SEO
 
 block project
-  .main(itemscope, itemtype='http://schema.org/CreativeWork')
+  .main
     .container
       .nine.columns
         .breadcrumbs-top
           ul(itemscope itemtype="http://schema.org/BreadcrumbList")
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
               meta(itemprop="position" content="1")
-              a(href='#{i18n.website}', 
-              title='#{i18n.name}, Portfolio Homepage', 
-              itemprop='item')
+              a(itemscope itemtype="http://schema.org/Thing" itemprop='item',
+              href='#{i18n.website}', 
+              title='#{i18n.name}, Portfolio Homepage')
                 span(itemprop='name') Home
               span >
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
               meta(itemprop="position" content="2")
-              a(href='#{i18n.website}/category/search-engine-marketing.html', 
-              title='#{i18n.name}, Search Engine Marketing projects', 
-              itemprop='item')
+              a(itemscope itemtype="http://schema.org/Thing" itemprop='item',
+              href='#{i18n.website}/category/search-engine-marketing.html', 
+              title='#{i18n.name}, Search Engine Marketing projects')
                 span(itemprop='name') Search Engine Marketing
               span >
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
@@ -69,39 +69,35 @@ block project
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/centre-for-digital-media/thumb.png', 
+                img( src='../../images/centre-for-digital-media/thumb.png', 
                 alt='Centre for Digital Media', 
                 title='Centre for Digital Media')
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/centre-for-digital-media/robots.png', 
+                img(src='../../images/centre-for-digital-media/robots.png', 
                 alt='Robots.txt file', 
                 title='Robots.txt file')
                 figcaption Fig 1. Robots.txt file
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/centre-for-digital-media/hreflang.png', 
+                img(src='../../images/centre-for-digital-media/hreflang.png', 
                 alt='Sitemap Hreflang', 
                 title='Sitemap Hreflang')
                 figcaption Fig 2. Hreflang sitemap
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/centre-for-digital-media/structured-data.png', 
+                img(src='../../images/centre-for-digital-media/structured-data.png', 
                 alt='Structured Data', 
                 title='Structured Data')
                 figcaption Fig 3. Homepage structured data
       .description.seven.columns.absolute
-        h1.client(itemprop='name') 
+        h1.client 
           a(href='https://thecdm.ca/' target="_blank" title="Centre for Digital Media" rel="nofollow noopener") Centre for Digital Media
         p.date Jan 2018 - Present
-        p.tags(itemprop='keywords')
+        p.tags
           i.fa.fa-tags
           |  crawl budget, pagination, redirections, duplicate content, website transition, hreflang
         .brief

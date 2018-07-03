@@ -29,13 +29,13 @@ block page-profession
   h2.header-heading #{i18n.name}, Digital Consultant
 
 block project
-  .main(itemscope, itemtype='http://schema.org/CreativeWork')
+  .main
     .container
       .ten.columns.full
         a.home-link(href='#{i18n.website}', title='Portfolio Homepage') ← Homepage
-        h1.client-full(itemprop='name') Université Laval and Arthritis Research Canada
+        h1.client-full Université Laval and Arthritis Research Canada
         p.date-full Aug 2017 - Present
-        p.tags-full(itemprop='keywords')
+        p.tags-full
           i.fa.fa-tags
           |  qualitative interviews, UX design, project management, web development, search engine optimization
         .brief-full
@@ -72,13 +72,11 @@ block project
           p Outcome: this workshop allowed the team to share opinions and ideas about Spinach and our personas, address diverging point of views, and determine a focus for the rest of the project.
           .flex
             figure
-              img(itemprop='image', 
-              class="small",
+              img(class="small",
               src='../../images/universite-laval-and-arc/prototyping-and-demos1.jpg', 
               alt='Prototyping and demos', 
               title='Prototyping and demos')
-              img(itemprop='image', 
-              class="small",
+              img(class="small",
               src='../../images/universite-laval-and-arc/prototyping-and-demos2.jpg', 
               alt='Prototyping and demos', 
               title='Prototyping and demos')

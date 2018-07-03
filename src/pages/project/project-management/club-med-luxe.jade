@@ -39,23 +39,23 @@ block page-profession
   h2.header-heading #{i18n.name}, Project Manager
 
 block project
-  .main(itemscope, itemtype='http://schema.org/CreativeWork')
+  .main
     .container
       .nine.columns
         .breadcrumbs-top
           ul(itemscope itemtype="http://schema.org/BreadcrumbList")
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
               meta(itemprop="position" content="1")
-              a(href='#{i18n.website}', 
-              title='#{i18n.name}, Portfolio Homepage', 
-              itemprop='item')
+              a(itemscope itemtype="http://schema.org/Thing" itemprop='item',
+              href='#{i18n.website}', 
+              title='#{i18n.name}, Portfolio Homepage')
                 span(itemprop='name') Home
               span >
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
               meta(itemprop="position" content="2")
-              a(href='#{i18n.website}/category/project-management.html', 
-              title='#{i18n.name}, Project Management projects', 
-              itemprop='item')
+              a(itemscope itemtype="http://schema.org/Thing" itemprop='item',
+              href='#{i18n.website}/category/project-management.html', 
+              title='#{i18n.name}, Project Management projects')
                 span(itemprop='name') Project Management
               span >
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
@@ -66,47 +66,42 @@ block project
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/club-med-luxe/thumb.jpg', 
+                img(src='../../images/club-med-luxe/thumb.jpg', 
                 alt='Club Med Luxe', 
                 title='Club Med Luxe')
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/club-med-luxe/home-screen.png', 
+                img(src='../../images/club-med-luxe/home-screen.png', 
                 alt='Club Med luxe landing Home screen', 
                 title='Club Med luxe landing Home screen')
                 figcaption Fig 1. Home Screen
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/club-med-luxe/loader.gif', 
+                img(src='../../images/club-med-luxe/loader.gif', 
                 alt='Club Med Luxe Loader', 
                 title='Club Med Luxe Loader')
                 figcaption Fig 2. Loader animation
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/club-med-luxe/development-process-1.png', 
+                img(src='../../images/club-med-luxe/development-process-1.png', 
                 alt='Development process', 
                 title='Development process')
                 figcaption Fig 3. Development process 1/2
             li
               .divider
               figure
-                img(itemprop='image', 
-                src='../../images/club-med-luxe/development-process-2.png', 
+                img(src='../../images/club-med-luxe/development-process-2.png', 
                 alt='Development process', 
                 title='Development process')
                 figcaption Fig 4. Development process 2/2
       .description.seven.columns.absolute
-        h1.client(itemprop='name') 
+        h1.client
           a(href='http://ns.clubmed.com/ipm/clubmed-luxe/en/home.html' target="_blank" title="Club Med Luxe" rel="nofollow noopener") Club Med Luxe
         p.date Jan - Sep 2015
-        p.tags(itemprop='keywords')
+        p.tags
           i.fa.fa-tags
           |  technical project management, single-page application, reactjs, search engine optimization
         .brief
