@@ -21,10 +21,10 @@ block post
       .twelve.columns.full
         a.home-link(href='#{i18n.website}', title='Portfolio Homepage') ← Homepage
         h1.client-full My technical setup
-        p.date-full Present
+        p.date-full 2017
         p.tags-full
           i.fa.fa-tags
-          |  GulpJS, Github Pages, Continuous Integration, jade, templating engine
+          |  GulpJS, github pages, continuous integration, jade
         .brief-full
           p My goal for this website was to develop a simple and scalable serverless static site. Here are the tools I used to make it possible.
           h3 GulpJS
@@ -42,18 +42,18 @@ block post
             img(src='../images/my-technical-setup/gulp-file.png', 
             alt='Gulp file', 
             title='Gulp file')
-            figcaption Fig 1. Gulp file
+            figcaption Gulp file
           h3 Github Pages
           p Github has a very handy feature called 
             a(href="https://pages.github.com", 
             target="_blank",
             rel="nofollow noopener",
             title="Github Pages") Github pages
-            |  which allows users to deploy and host their website from their github repository. I push my development files on the dev branch and I use Gulp to push my build to the master branch (the master branch acts as my server). This solution is free, secure, and highly optimised as it uses Github's CDN.
+            |  which allows users to deploy and host their website from their github repository. I push my development files on the dev branch and I use Gulp to push my build to the master branch. This solution is free, secure, and offers good performance thanks to Github's CDN.
           h3 Jade templating engine
           p 
             a(href="http://jade-lang.com", 
             target="_blank",
             rel="nofollow noopener",
             title="Jade Language") Jade
-            |  is a neat templating engine that lets you write markup fast. I'm currently using its most basic features but I'm planning on implementing mixins and other JavaScript features in the near future.
+            |  is a neat templating engine that lets you write markup fast. I'm currently using its most basic features but I'm planning on trying its more advanced feature to automate other parts of my build process.
