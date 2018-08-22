@@ -46,15 +46,12 @@ block post
       .nine.columns
         .breadcrumbs-top
           ul(itemscope itemtype="http://schema.org/BreadcrumbList")
-            li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-              meta(itemprop="position" content="1")
-              a(itemscope itemtype="http://schema.org/Thing" itemprop='item',
-              href='#{i18n.website}', 
-              title='#{i18n.name}, Portfolio Homepage')
+            li
+              a(href='#{i18n.website}', title='#{i18n.name}, Portfolio Homepage')
                 span(itemprop='name') Home
               span >
             li(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-              meta(itemprop="position" content="2")
+              meta(itemprop="position" content="1")
               p(itemprop='name') Understanding the problem space
         .media
           ul.image-list
