@@ -36,7 +36,7 @@ gulp.task("styles", function(){
     .pipe(gulp.dest("dist/styles"))
 })
 
-gulp.task("default", ["assets", "images", "pages", "styles"])
+gulp.task("default", gulp.series("assets", "images", "pages", "styles"))
 
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
