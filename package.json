@@ -1,12 +1,12 @@
 {
   "name": "thomas-portfolio",
-  "description": "Thomas Petitjean's professional portfolio.",
+  "description": "Thomas Petitjean's portfolio.",
   "main": "Gulpfile.js",
   "author": "ThomasPJ",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^5.0.0",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-gh-pages": "^0.5.4",
